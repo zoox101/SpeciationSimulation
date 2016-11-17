@@ -13,6 +13,7 @@ import java.io.IOException;
  */
 public class ZZZNormTest {
 	
+	//Used to test if a distribution is normal
 	public static void main(String[] args) throws IOException {
 		test(5, Math.pow(0.5,1), 5000);
 	}
