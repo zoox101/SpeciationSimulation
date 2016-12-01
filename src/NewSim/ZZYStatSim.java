@@ -53,10 +53,15 @@ public class ZZYStatSim extends ArrayList<Bird>{
 	
 	public static void main(String[] args) {
 		
-		for(int i=0; i<10000; i+=100) {
+		/*
+		for(int i=10000; i<100000; i+=2000) {
 			ZZYStatSim simulation = new ZZYStatSim(i);
 			System.out.println(i + "," + simulation.size());
 		}
+		*/
+		
+		ZZYStatSim simulation = new ZZYStatSim(50000);
+		System.out.println(50000 + "," + simulation.size());
 		
 	}
 
