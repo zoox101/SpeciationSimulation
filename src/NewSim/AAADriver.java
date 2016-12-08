@@ -24,7 +24,7 @@ public class AAADriver {
 		
 		System.out.println("Starting New Simulation");
 		
-		/* Simulation */
+		/* Simulation *
 		System.out.println("40 Birds -- 4x Starting Pop -- 0 Mutation Rate");
 		for(int i=0; i<48; i++) new Simulation(random, bimodal, pseudo, incomplete);
 		for(int i=0; i<48; i++) new Simulation(random, bimodal, meiosis, incomplete);
@@ -38,11 +38,11 @@ public class AAADriver {
 		new Simulation(random, bimodal, meiosis, complete);
 		/* Simulation Testing */
 		
-		/* Mutation Testing *
-		new Simulation(sexual, bimodal, pseudo, incomplete);
-		new Simulation(sexual, uniform, pseudo, incomplete);
-		new Simulation(sexual, bimodal, avg, incomplete);
-		new Simulation(sexual, uniform, avg, incomplete);
+		/* Mutation Testing */
+		new Simulation(sexual, bimodal, meiosis, incomplete);
+		//new Simulation(sexual, uniform, pseudo, incomplete);
+		//new Simulation(sexual, bimodal, avg, incomplete);
+		//new Simulation(sexual, uniform, avg, incomplete);
 		/* Mutation Testing */
 		
 		System.out.println("Finishing Simulation");

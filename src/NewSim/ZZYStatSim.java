@@ -60,8 +60,12 @@ public class ZZYStatSim extends ArrayList<Bird>{
 		}
 		*/
 		
-		ZZYStatSim simulation = new ZZYStatSim(50000);
-		System.out.println(50000 + "," + simulation.size());
+		int[] array = {2050, 4050, 8050};
+		
+		for(int i=0; i<array.length; i++) {
+			ZZYStatSim simulation = new ZZYStatSim(array[i]);
+			System.out.println(array[i] + "," + simulation.size());
+		}
 		
 	}
 
