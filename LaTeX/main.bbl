@@ -1,8 +1,5 @@
 \begin{thebibliography}{1}
 
-\bibitem{SPBOOK}
-
-
 \bibitem{BMP4}
 Arhat Abzhanov.
 \newblock Bmp4 and morphological variation of beaks in darwin's finches.
@@ -12,6 +9,11 @@ Arhat Abzhanov.
 Niel~A. Campbell, Brad Williamson, and Robin~J. Heyden.
 \newblock {\em Biology Exploring Life}.
 \newblock Pearson, 2006.
+
+\bibitem{SPBOOK}
+Jerry~A. Coyne and H.~Allen Orr.
+\newblock {\em Speciation}.
+\newblock Sinauer Associates, 2004.
 
 \bibitem{NICHING}
 Jeffrey Horn, Nicholas Nafpliotis, and David~E Goldberg.
