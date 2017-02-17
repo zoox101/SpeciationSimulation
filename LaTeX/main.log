@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  16 FEB 2017 20:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 FEB 2017 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -505,60 +505,61 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 60.
+(Font)              <7> on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 60.
+(Font)              <5> on input line 58.
  [3] [4] [5] <Data/EXP2.jpeg, id=32, 1003.75pt x 1003.75pt>
 File: Data/EXP2.jpeg Graphic file (type jpg)
 
 <use Data/EXP2.jpeg>
-Package pdftex.def Info: Data/EXP2.jpeg used on input line 115.
+Package pdftex.def Info: Data/EXP2.jpeg used on input line 113.
+(pdftex.def)             Requested size: 345.0pt x 345.00758pt.
+ <Data/EXP3.jpeg, id=33, 1003.75pt x 1003.75pt>
+File: Data/EXP3.jpeg Graphic file (type jpg)
+
+<use Data/EXP3.jpeg>
+Package pdftex.def Info: Data/EXP3.jpeg used on input line 158.
 (pdftex.def)             Requested size: 345.0pt x 345.00758pt.
  [6 <./Data/EXP2.jpeg>]
-<Data/EXP3.jpeg, id=36, 1003.75pt x 1003.75pt>
-File: Data/EXP3.jpeg Graphic file (type jpg)
- <use Data/EXP3.jpeg>
-Package pdftex.def Info: Data/EXP3.jpeg used on input line 160.
-(pdftex.def)             Requested size: 345.0pt x 345.00758pt.
- [7]
-<Data/EXP4.jpeg, id=41, 1003.75pt x 501.875pt>
+<Data/EXP4.jpeg, id=37, 1003.75pt x 501.875pt>
 File: Data/EXP4.jpeg Graphic file (type jpg)
  <use Data/EXP4.jpeg>
-Package pdftex.def Info: Data/EXP4.jpeg used on input line 205.
+Package pdftex.def Info: Data/EXP4.jpeg used on input line 203.
 (pdftex.def)             Requested size: 345.0pt x 172.50378pt.
- [8 <./Data/EXP3.jpeg>] <Data/EXP5.jpeg, id=45, 1003.75pt x 669.50125pt>
+ [7]
+<Data/EXP5.jpeg, id=42, 1003.75pt x 669.50125pt>
 File: Data/EXP5.jpeg Graphic file (type jpg)
-
-<use Data/EXP5.jpeg>
-Package pdftex.def Info: Data/EXP5.jpeg used on input line 218.
+ <use Data/EXP5.jpeg>
+Package pdftex.def Info: Data/EXP5.jpeg used on input line 216.
 (pdftex.def)             Requested size: 345.0pt x 230.12006pt.
- [9 <./Data/EXP4.jpeg> <./Data/EXP5.jpeg>] [10] [11]
-[12] [13] [14] (./main.bbl) [15] (./main.aux) ) 
+ [8 <./Data/EXP3.jpeg>] [9 <./Data/EXP4.jpeg> <./Data/EXP5.jpeg>] [10] [11] [12
+] [13]
+[14] (./main.bbl) [15] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 3759 strings out of 493014
- 54015 string characters out of 6133351
- 130945 words of memory out of 5000000
- 7265 multiletter control sequences out of 15000+600000
+ 3762 strings out of 493014
+ 54057 string characters out of 6133351
+ 131964 words of memory out of 5000000
+ 7268 multiletter control sequences out of 15000+600000
  8285 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,10n,40p,1346b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmti8.pfb>
-Output written on main.pdf (15 pages, 1259863 bytes).
+</usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+i8.pfb>
+Output written on main.pdf (15 pages, 1259393 bytes).
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
  80 compressed objects within 1 object stream
