@@ -18,7 +18,6 @@ public class AAADriver {
 	final static Gene.Type incomplete = Gene.Type.IncompleDominance;
 	final static Gene.Type complete = Gene.Type.CompleteDominance;
 
-	
 	public static void main(String[] args) throws IOException {
 		
 		System.out.println("Starting New Simulation");
