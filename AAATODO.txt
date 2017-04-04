@@ -1,0 +1,23 @@
+Complete:
+	Move focus away from Mark's paper
+	Abstract too long - Five or six sentences
+
+Next Up Intro:
+	Try to get a figure on the first page - Meiotic inheritance figure
+	Look for other gene models - Evolutionary computation community
+	Other niching methods
+
+Next Up Other:
+	Subgenes are confusing -> Base pairs? How many genes are there?
+	Genetic hitchhiking literature -> Terminology. (Gene masking)
+	Count branching as different from speciation.
+
+Later Issues:
+	Statistical analysis on counts.
+	Work on citations 
+	Tailor intro to Artificial Life
+	Submission instructions
+
+??Possible Changes??
+	Switch order
+
