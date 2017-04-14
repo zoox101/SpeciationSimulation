@@ -1,6 +1,9 @@
 Complete:
 	Move focus away from Mark's paper
 	Abstract too long - Five or six sentences
+	Statistical analysis on counts.
+	Subgenes are confusing -> Base pairs? How many genes are there?
+	Count branching as different from speciation.
 
 Next Up Intro:
 	Try to get a figure on the first page - Meiotic inheritance figure
@@ -8,12 +11,9 @@ Next Up Intro:
 	Other niching methods
 
 Next Up Other:
-	Subgenes are confusing -> Base pairs? How many genes are there?
 	Genetic hitchhiking literature -> Terminology. (Gene masking)
-	Count branching as different from speciation.
 
 Later Issues:
-	Statistical analysis on counts.
 	Work on citations 
 	Tailor intro to Artificial Life
 	Submission instructions
