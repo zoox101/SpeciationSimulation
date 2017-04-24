@@ -23,19 +23,19 @@
 
 \section{Abstract}
 
-Speciation is a critical process for both evolutionary science and machine learning. It helps us understand the development of life on Earth and can improve genetic algorithms' ability to find global maximums. In recent years, there has been considerable effort to understand this elusive process and uncover new techniques to simulate it. While there are many approaches for doing so, few examine one of the most important features of any genetic system: inheritance. This paper seeks to address this shortcoming and demonstrate how minor changes to a population's inheritnace mechanism can radically alter a it's ability to speciate. Specifically, we look at how simulated meiotic inheritance with complete genetic dominance can significantly improve a population's divergent capability, even in absance of other speciation pressures. 
+Speciation is a critical process for both evolutionary science and machine learning. It helps us understand the development of life on Earth and can improve genetic algorithms' ability to find global maximums. In recent years, there has been considerable effort to understand this elusive process and uncover new techniques to simulate it. While there are many approaches for doing so, few examine one of the most important features of any genetic system: inheritance. This paper seeks to address this shortcoming and demonstrate how minor changes to a population's inheritance mechanism can radically alter a it's ability to speciate. Specifically, we look at how simulated meiotic inheritance with complete genetic dominance can significantly improve a population's divergent capability, even in absence of other speciation pressures. 
 
 
 
 \section{Introduction}
 
-Speciation describes the natural tendancy for homogenous populations to split and form discrete groups through the continuous process of evolution. \cite{SPBOOK} It underpins our understanding of biology and it is fundamental to the development of life on this planet. Additionally, speciation shows promise in the realm of artificial intelligence, as a mechanism by which to narrow in on optimal solutions in multi-modal solution spaces.
+Speciation describes the natural tendency for homogeneous populations to split and form discrete groups through the continuous process of evolution. \cite{SPBOOK} It underpins our understanding of biology and it is fundamental to the development of life on this planet. Additionally, speciation shows promise in the realm of artificial intelligence, as a mechanism by which to narrow in on optimal solutions in multi-modal solution spaces.
 
-Evolutionary biologists define two distinct types of speciation: allopatric speciation, where isolated populations acquire new traits independently, and sympatric speciation, where a single population diverges over time. For our purposes, we are mostly concerned with sympatric speciation, as it has significant untapped potential for improving genetic algorithms. While there are many methods for inducing a type of allopatric speciation in genetic algorithms, such as such as niching \cite{NICHING}, population topologies \cite{TOPOLOGIES}, and island models \cite{ISLAND}, these approaches require implicit assumptions about the solution space which must be explicitly tailored to each problem. Ideally we would like to find a more general solution, where the algorithm speciates correctly in a number of different enviornments. 
+Evolutionary biologists define two distinct types of speciation: allopatric speciation, where isolated populations acquire new traits independently, and sympatric speciation, where a single population diverges over time. For our purposes, we are mostly concerned with sympatric speciation, as it has significant untapped potential for improving genetic algorithms. While there are many methods for inducing a type of allopatric speciation in genetic algorithms, such as such as niching \cite{NICHING}, population topologies \cite{TOPOLOGIES}, and island models \cite{ISLAND}, these approaches require implicit assumptions about the solution space which must be explicitly tailored to each problem. Ideally we would like to find a more general solution, where the algorithm speciates correctly in a number of different environments. 
 
-For our experiments in sympatric speciation, we chose to examine an evolutionary model designed my Mark Woener et al. as part of the paper \textit{Sexual Selection, Resource Distribution, and Population Size in Synthetic Sympatric Speciation}. In the paper, the researchers hypothesized that sexual selection may be key to inducing sympatric speciation, as it has the potential to isolate sub-groups within a population, which could then evolve different traits in a similar manner to allotropic speciation. To test this hypothesis, the researchers set up a 2x2 factorial study using a simulated population of finches. In the study, the researches created two different distributions of seeds, bimodal and uniform, and observed the differences in population dynamics between finches that utilized sexual selection and those that did not.
+For our experiments in sympatric speciation, we chose to examine an evolutionary model designed my Mark Woener et al. as part of the paper \textit{Sexual Selection, Resource Distribution, and Population Size in Synthetic Sympatric Speciation}. In the paper, the researchers hypothesized that sexual selection may be key to inducing sympatric speciation, as it has the potential to isolate sub-groups within a population, which could then evolve different traits in a similar manner to allopatric speciation. To test this hypothesis, the researchers set up a 2x2 factorial study using a simulated population of finches. In the study, the researches created two different distributions of seeds, bimodal and uniform, and observed the differences in population dynamics between finches that utilized sexual selection and those that did not.
 
-While the researches successfully demonstrated that sexual selection was an effective method to induce sympatric speciation in a population, some of the results in their control study seemed to contradict our understanding of biological speciation. Specifically, when a population without sexual selection encountered a bimodal seed distribution, the population never expanded to cover both possible niches. This result is peculiar, as any species is highly incentivized to take advantage of all available niches in its environment. The convergence exhibited in the bimodal seed random mating scenario is known as bottlenecking, and typically only occurs in small, declining populations \cite{CHICKEN}. To see bottlenecking occurring in our large, healthy population suggests that there may be another factor at play, which enables more phylogenetic divergance in biological populations.
+While the researches successfully demonstrated that sexual selection was an effective method to induce sympatric speciation in a population, some of the results in their control study seemed to contradict our understanding of biological speciation. Specifically, when a population without sexual selection encountered a bimodal seed distribution, the population never expanded to cover both possible niches. This result is peculiar, as any species is highly incentivized to take advantage of all available niches in its environment. The convergence exhibited in the bimodal seed random mating scenario is known as bottlenecking, and typically only occurs in small, declining populations \cite{CHICKEN}. To see bottlenecking occurring in our large, healthy population suggests that there may be another factor at play, which enables more phylogenetic divergence in biological populations.
 
 
 
@@ -106,6 +106,8 @@ The fifth experiment is a response to an unexpected result in our third experime
 
 The results of our experiments are given in the form of population trees and extinction rates. The trees are organized into tables such that the columns represent gene structures and the rows represent the seed distributions and mating types.
 
+To test for statistical significance, we used a two-sample z-test on the experimental and control proportions. The results of the first replication experiment are compared against the samples from the \textit{Speciation} paper, while the results for the remaining experiments were tested against our replicated values. 
+
 \subsection{Experiments 1-2 -- Replication and Gene Structure}
 
 The results from the first two experiments are given in figure \ref{fig:EXP2} and table \ref{table:EXP2}. In figure \ref{fig:EXP2}, the first column represents our replication of the \textit{Speciation} paper's results, while the second and third columns represent the introduction of the new genetic structure. The results from the first experiment closely match the results of the \textit{Speciation} paper. As expected, we see high rates of speciation in the BSAM and the USAM scenarios and no speciation in the BSRM and the USRM scenarios. The population trees and extinction rates from the second and third experiment closely match those from the first, indicating that the introduction of the genetic structure had little impact on the results of the simulation.
@@ -122,9 +124,9 @@ The results from the first two experiments are given in figure \ref{fig:EXP2} an
     \begin{tabular}{| p{2.75cm} *{4}{|c} |}
         \hline
         BSAM & Baseline & Replication & Avg Idom & Avg Cdom \\ \hline
-        Speciation & 31 & 30 & 25 & \textit{23} \\ \hline
-        Partial Extinction & 17 & 15 & 23 & 21 \\ \hline
-        Extinction & 0 & 3 & 0 & \textit{4} \\ \hline
+        Speciation & 31 & 30 & 25 & 23 \\ \hline
+        Partial Extinction & 17 & 15 & \textit{23} & 21 \\ \hline
+        Extinction & 0 & \textit{3} & \textit{0} & 4 \\ \hline
     \end{tabular}
     \begin{tabular}{| p{2.75cm} *{4}{|c} |}
         \hline
@@ -147,7 +149,7 @@ The results from the first two experiments are given in figure \ref{fig:EXP2} an
     \end{tabular}
     \caption{
         Experimental Replication and Introducing Gene Structure \newline 
-        \textit{Bold is statisticallly significant at 1\%. Italics are statistically significant at 5\%.}
+        \textit{Bold is statistically significant at 1\%. Italics are statistically significant at 5\%.}
     }
     \label{table:EXP2}
 \end{table}
@@ -167,35 +169,35 @@ The results from the third experiment are given in figure \ref{fig:EXP3} and tab
 
 \begin{table} [hb!]
 \centering
-    \begin{tabular}{| p{2.75cm} *{3}{|c} |}
+    \begin{tabular}{| p{2.75cm} *{4}{|c} |}
         \hline
-        BSAM & Avg Idom & Meiosis Idom & Meiosis Cdom \\ \hline
-        Speciation & 25 & \textit{31} & 20 \\ \hline
-        Partial Extinction & 23 & \textit{15} & 27 \\ \hline
-        Extinction & 0 & 2 & 1 \\ \hline
+        BSAM & Avg Idom & Avg Cdom & Meiosis Idom & Meiosis Cdom \\ \hline
+        Speciation & 25 & 23 & 31 & 20 \\ \hline
+        Partial Extinction & 23 & 21 & \textit{15} & 27 \\ \hline
+        Extinction & 0 & 4 & 2 & 1 \\ \hline
     \end{tabular}
     \begin{tabular}{| p{2.75cm} *{4}{|c} |}
         \hline
-        BSRM & Avg Idom & Meiosis Idom & Meiosis Cdom \\ \hline
-        Speciation & 0 & 1 & \textbf{33} \\ \hline
-        Partial Extinction & 35 & 30 & \textbf{14} \\ \hline
-        Extinction & 13 & 17 & \textbf{1} \\ \hline
+        BSRM & Avg Idom & Avg Cdom & Meiosis Idom & Meiosis Cdom \\ \hline
+        Speciation & 0 & 0 & 1 & \textbf{33} \\ \hline
+        Partial Extinction & 35 & 35 & 30 & \textbf{14} \\ \hline
+        Extinction & 13 & 13 & 17 & \textbf{1} \\ \hline
     \end{tabular}
     \begin{tabular}{| p{2.75cm} *{4}{|c} |}
         \hline
-        USAM & Avg Idom & Meiosis Idom & Meiosis Cdom \\ \hline
-        Branching & 41 & 37 & 41 \\ \hline
-        Extinction & 7 & 11 & 7 \\ \hline
+        USAM & Avg Idom & Avg Cdom & Meiosis Idom & Meiosis Cdom \\ \hline
+        Branching & 41 & 41 & 37 & 41 \\ \hline
+        Extinction & 7 & 7 & 11 & 7 \\ \hline
     \end{tabular}
     \begin{tabular}{| p{2.75cm} *{4}{|c} |}
         \hline
-        USRM & Avg Idom & Meiosis Idom & Meiosis Cdom \\ \hline
-        Single Species & 24 & \textbf{44} & \textit{40} \\ \hline
-        Extinction & 24 & \textbf{4} & \textit{8} \\ \hline
+        USRM & Avg Idom & Avg Cdom & Meiosis Idom & Meiosis Cdom \\ \hline
+        Single Species & 24 & 34 & \textbf{44} & 40 \\ \hline
+        Extinction & 24 & 14 & \textbf{4} & 8 \\ \hline
     \end{tabular}
     \caption{
         Introducing Meiotic Inheritance \newline
-        \textit{Bold is statisticallly significant at 1\%. Italics are statistically significant at 5\%.} 
+        \textit{Bold is statistically significant at 1\%. Italics are statistically significant at 5\%.} 
     }
     \label{table:EXP3}
 \end{table}
@@ -217,7 +219,7 @@ The results of the fourth experiment are given in figure \ref{fig:EXP4} and repr
 
 \subsection{Experiment 5 -- Modifying The Initial Population} 
 
-The results of the fifth experiment are given in figure \ref{fig:EXP5} and table \ref{table:EXP5}. The first column of figure \ref{fig:EXP5} represents the incomplete dominance case with the averaging inheritance method. The second and third columns represent meiotic inheritance with incomplete and complete dominance. When the population was widened, both meiotic populations exhibited high rates of speciation. When the population was narrowed, only the complete dominance case speciated, and the rate of specition was drastically reduced. The non-meiotic population exhibited no speciation events in either scenario. 
+The results of the fifth experiment are given in figure \ref{fig:EXP5} and table \ref{table:EXP5}. The first column of figure \ref{fig:EXP5} represents the incomplete dominance case with the averaging inheritance method. The second and third columns represent meiotic inheritance with incomplete and complete dominance. When the population was widened, both meiotic populations exhibited high rates of speciation. When the population was narrowed, only the complete dominance case speciated, and the rate of speciation was drastically reduced. The non-meiotic population exhibited no speciation events in either scenario. 
 
 \begin{figure} [ht!]
     \centering
@@ -244,7 +246,7 @@ The results of the fifth experiment are given in figure \ref{fig:EXP5} and table
     \end{tabular}
     \caption{
         BSRM Scenario with Varying Initial Populations \newline
-        \textit{Bold is statisticallly significant at 1\%. Italics are statistically significant at 5\%.} 
+        \textit{Bold is statistically significant at 1\%. Italics are statistically significant at 5\%.} 
     }
     \label{table:EXP5}
 \end{table}
