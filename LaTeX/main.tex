@@ -1,6 +1,6 @@
 \documentclass{article}
 \title{Synthetic Sympatric Speciation Through Meiotic Inheritance}
-\author{William Booker - Version 3.02}
+\author{William Booker - Version 3.11}
 \date{May 19, 2017}
 
 \usepackage[utf8]{inputenc}
@@ -35,7 +35,7 @@ Evolutionary biologists define two distinct types of speciation: allopatric spec
 
 For our experiments in sympatric speciation, we chose to examine an evolutionary model designed my Mark Woener et al. as part of the paper \textit{Sexual Selection, Resource Distribution, and Population Size in Synthetic Sympatric Speciation}. In the paper, the researchers hypothesized that sexual selection may be key to inducing sympatric speciation, as it has the potential to isolate sub-groups within a population, which could then evolve different traits in a similar manner to allopatric speciation. To test this hypothesis, the researchers set up a 2x2 factorial study using a simulated population of finches. In the study, the researches created two different distributions of seeds, bimodal and uniform, and observed the differences in population dynamics between finches that utilized sexual selection and those that did not.
 
-While the researchers successfully demonstrated that sexual selection could induce sympatic speciation in synthetic populations, they did not address how their results appeared to radically differ from speciation in the biological world. Specifically, in the simulation, when a population without sexual selection encountered a bimodal seed distribution, the population never expanded to cover both possible niches. This result is peculiar, as any species is highly incentivized to take advantage of all available niches in its environment. The convergence exhibited in the bimodal seed random mating scenario is known as bottlenecking, and typically only occurs in small, declining populations \cite{CHICKEN}. To see bottlenecking occurring in our large, healthy population suggests that there may be another factor at play, which may be enabling more phylogenetic divergence in biological populations.
+While the researchers successfully demonstrated that sexual selection could induce sympatic speciation in synthetic populations, they did not address how their results differed from speciation in the biological world. Specifically, in the simulation, when a population without sexual selection encountered a bimodal seed distribution, the population never expanded to cover both possible niches. This result is peculiar, as any species is highly incentivized to take advantage of all available niches in its environment. The convergence exhibited in the bimodal seed random mating scenario is known as bottlenecking, and typically only occurs in small, declining populations \cite{CHICKEN}. To see bottlenecking occurring in our large, healthy population suggests that there may be another factor at play, which may be enabling more phylogenetic divergence in biological populations.
 
 
 
@@ -45,7 +45,7 @@ The cause of the population convergence in the bimodal seed random mating scenar
 
 
 
-\section{Methods}
+\section{Overview}
 
 This research can be divided into three phases: experimental replication, introduction of meiotic inheritance, and supplemental analysis. In the first phase (Experimental Replication), we successfully reproduced the simulation described in the \textit{Speciation} paper and validated the paper's results. In the second phase (Meiotic Inheritance), we modified the simulation to include a meiotic gene model and observed how the change affected the population's speciation potential. In the third phase (Supplemental Analysis), we modified the simulation to observe the effects of meitotic inheritance in a controlled enviornment. 
 
@@ -67,7 +67,7 @@ The dry season lasts 100 days, and begins by spreading 5000 seeds randomly aroun
 
 The simulation accounts for two different distributions of seed sizes: bimodal and uniform. The bimodal distribution consists of two Gaussian distributions of 2500 seeds each; these distributions are centered at three and eight units, each with a standard deviation of 0.5 units. The uniform distribution consists of a single uniform distribution of 5000 seeds ranging from one to ten units in size. In both scenarios, a seed contains between zero and two units of energy (uniform distribution).
 
-After the dry season ends, the remaining finches participate in that year's mating season. During the mating season, each female chooses a single male to mate with. The simulation accounts for two types of mating: random mating, where females will choose any male from the population, and assorted mating, where females will only pick males within one unit of its beak-size. Each male is only allowed to mate with five females per year. When presented with multiple possible mates, the female will choose between them at random. Mating produces a single offspring at the location of the mother. The child’s beak-size is an average of the beak-sizes of the parents plus a small Gaussian-random mutation (mean 0, standard deviation 0.2).
+After the dry season ends, the remaining finches participate in that year's mating season. During the mating season, each female chooses a single male to mate with. Each male is only allowed to mate five times per breeding season. The simulation accounts for two types of mating: random mating, where females will choose any male from the population, and assorted mating, where females will only pick males within one unit of its beak-size. Each male is only allowed to mate with five females per year. When presented with multiple possible mates, the female will choose between them at random. Mating produces a single offspring at the location of the mother. The child’s beak-size is an average of the beak-sizes of the parents plus a small Gaussian-random mutation (mean 0, standard deviation 0.2).
 
 This process results in four discrete cases: bimodal seeds assorted mating (BSAM), bimodal seeds random mating (BSRM), uniform seeds assorted mating (USAM), and uniform seeds random mating (USRM). Each case is replicated 48 times to give insight into population extinction rates. 
 
