@@ -47,7 +47,7 @@ The cause of the population convergence in the bimodal seed random mating scenar
 
 \section{Methods}
 
-This research can be divided into three phases: experimental replication, introduction of meiotic inheritance, and supplemental analysis. In the first phase (replication), we successfully reproduced the simulation described in the \texit{Speciation} paper and validated the paper's results. In the second phase (meiotic inheritance), we modified the simulation to include a meiotic gene model and observed how the change affected the population's speciation potential. In the third phase (supplemental analysis), we modified the simulation to observe the effects of meitotic inheritance in a controlled enviornment. 
+This research can be divided into three phases: experimental replication, introduction of meiotic inheritance, and supplemental analysis. In the first phase (Experimental Replication), we successfully reproduced the simulation described in the \texit{Speciation} paper and validated the paper's results. In the second phase (Meiotic Inheritance), we modified the simulation to include a meiotic gene model and observed how the change affected the population's speciation potential. In the third phase (Supplemental Analysis), we modified the simulation to observe the effects of meitotic inheritance in a controlled enviornment. 
 
 The results of our experiments are given in the form of population trees and extinction rates. The trees are organized into tables such that the columns represent gene structures and the rows represent the seed distributions and mating types.
 
@@ -75,50 +75,7 @@ This process results in four discrete cases: bimodal seeds assorted mating (BSAM
 
 \subsection{Results}
 
-
-
-
-
-
-
-\subsection{Experiment 2 -- Introduction of Genetic Structure}
-
-The objective of this experiment is to replace the simplistic inheritance structure with a more robust genetic model while still preserving the underlying averaging process. This step serves as a control study to demonstrate that the changes in the third experiment are a result of the introduction of meiotic inheritance rather than the introduction of the new genetic structure. This structure is designed to mimic genetics in the natural world as closely as possible.
-
-Each finch is equipped with two chromosomes, one from each parent. Each chromosome contains an array of one-hundred genes, each represented by a floating point value. The phenotype for a chromosome is determined by taking the sum of all of it's genes. In order to mimic the \textit{Speciation} paper’s initial population, the genes in the initial population are randomly chosen from a uniform distribution with a mean of 0.055 and a range of 0.245 \footnote{The mean of 0.055 and the range of 0.245 were determined mathematically. The final beak-size is equal to the average of two sums of 100 genes, or $(\sum_{i=1}^{200} x_{i})/2$. The distribution of the beak-sizes is normal by the central limit theorem. The mean is $(200 * 0.055)/2 = 5.5$, and the standard deviation is $\sqrt{\frac{1}{4}\sum_{i=1}^{200}Var(x_{i})} = 0.5$ where $Var(x_{i}) = \frac{0.245^2}{12}$.}. This model is a good fit for biological populations, as it represents how a single gene, Bmp4, is responsible for most of the variation in beak-sizes in real Darwinian finches \cite{BMP4}. 
-
-Our experiments use both a complete dominance and an incomplete dominance model. In the complete dominance model, the larger of the two phenotypes is chosen for the finch's beak-size. In the incomplete dominance model, the two phenotypes are averaged to determine the beak-size. Note that for the purposes of inheritance this choice is arbitrary, as neither model affects the actual genetic material that is passed on to the child. 
-
-In order to maintain the averaging process, when mating, the genes of each parent are averaged to determine the genes for the child. Each gene has a 10\% chance to mutate after the averaging process. When a gene is selected for mutation, we add a random value taken from a uniform distribution with a range of 0.310 and a mean of 0 \footnote{The running mutation range of 0.310 was determined empirically. We iteratively tested mutation ranges until the standard deviation of the change in beak-size consistently averaged at 0.2}.
-
-
-	
-\subsection{Experiment 3 -- Introduction of Meiotic
-Inheritance}
-
-The setup for the third experiment is nearly identical to that of the second: the only change is the addition of meiotic inheritance. During mating, rather than average the genes of the parents' chromosomes, the child receives one randomly selected chromosome from each of its parents. The mutation rate and range remain the same as in the previous step. 
-
-
-
-\subsection{Experiments 4-5 Notes}
-
-In the fourth and fifth experiments, we made two major changes when compared to the initial three experiments. First, rather than testing all population conditions, we only looked at the meiotic population conditions and one non-meiotic population condition in the BSRM scenario. Second, we reduced the initial population size from 400 down to 40 to help smooth out the initial population collapse and subsequent rebound that appeared in our first three experiments.
-
-\subsection{Experiment 4 -- Removing Mutation}
-
-The fourth experiment is designed to illustrate the convergent tendency of the averaging inheritance method by removing the noise caused by mutation. We achieved this effect by reducing the range of the running mutation rate from 0.310 to 0.00. We also quadrupled the initial mutation rate to 0.980 in order to give the starting population sufficient diversity to reach both niches. 
-
-\subsection{Experiment 5 -- Modifying The Initial Population}
-
-The fifth experiment is a response to an unexpected result in our third experiment, where complete dominance exhibited far higher speciation rates than incomplete dominance. In this experiment, we changed the size of the initial population to see the effects on the relative extinction rates between incomplete dominance and complete dominance. For the first test, we widened the initial population by quadrupling the mutation rate to 0.980. In the second test, we reduced the initial population by halving the mutation rate to 0.1225 and moving the mean to 0.80. This change centers the population in the middle of the upper niche.
-
-
-
-\section{Results}
-
-\subsection{Experiments 1-2 -- Replication and Gene Structure}
-
-The results from the first two experiments are given in figure \ref{fig:EXP2} and table \ref{table:EXP2}. In figure \ref{fig:EXP2}, the first column represents our replication of the \textit{Speciation} paper's results, while the second and third columns represent the introduction of the new genetic structure. The results from the first experiment closely match the results of the \textit{Speciation} paper. As expected, we see high rates of speciation in the BSAM and the USAM scenarios and no speciation in the BSRM and the USRM scenarios. The population trees and extinction rates from the second and third experiment closely match those from the first, indicating that the introduction of the genetic structure had little impact on the results of the simulation.
+The results from the first phase are given in figure \ref{fig:EXP2} and table \ref{table:EXP2} along with some results from the second phase. In figure \ref{fig:EXP2}, the first column represents the extinction rates given in the \texit{Speciation} paper and the second column represents our replicated results. As expected, the results from our replication experiment closely match those from the initial paper. Specifically, we see high rates of speciation in the BSAM and USAM scenarios, and no speciation in the BSRM and USRM scenarios.
 
 \begin{figure} [h!]
     \centering
@@ -162,11 +119,29 @@ The results from the first two experiments are given in figure \ref{fig:EXP2} an
     \label{table:EXP2}
 \end{table}
 
+\subsection{Analysis}
+
+In our first experiment, we were largely successful in replicating the results from the \textit{Speciation} paper. In the BSAM, BSRM, and USAM cases, the population distributions, the widths of the population bands, and the number of extinction events lined up extremely well with what was described in the \textit{Speciation} paper. In the USRM scenario, the population distribution and the widths of the bands were correct, but there were significantly more extinction events than expected. We suspect that this anomaly might be due to a minor difference between our implementation and that of the initial experiment that was not covered in the original paper. Furthermore, it’s worth noting that we experienced another anomaly in the USRM scenario in the second experiment, suggesting that the extinction rates in this scenario might be unusually sensitive to minor changes in experimental setup. However, despite this anomaly, we are confident that we have successfully replicated the \textit{Speciation} paper’s results. 
 
 
-\subsection{Experiment 3 -- Introduction of Meiotic Inheritance}
 
-The results from the third experiment are given in figure \ref{fig:EXP3} and table \ref{table:EXP3}. The first column of figure \ref{fig:EXP3} is equivalent the incomplete dominance scenario from the second column of figure \ref{fig:EXP2}. Columns two and three represent the introduction of meiotic inheritance. As the data shows, the introduction of meiotic inheritance radically altered the behavior of each of the population. Specifically, it broadened the population bands, and occasionally induced speciation in the BSRM scenarios. Note that these speciation events occur far more frequently in the complete dominance structure than in the incomplete dominance structure.
+\section{Meiotic Inheritance}
+
+\subsection{Methods}
+
+Before replacing the inheritance method with our meiotic model, we first replaced the simplistic inheritance structure with a more robust genetic model while still preserving the underlying averaging process. This step serves as a control study to demonstrate that the changes in the third experiment are a result of the introduction of meiotic inheritance rather than the introduction of the new genetic structure. This structure is designed to mimic genetics in the natural world as closely as possible.
+
+Each finch is equipped with two chromosomes, one from each parent. Each chromosome contains an array of one-hundred genes, each represented by a floating point value. The phenotype for a chromosome is determined by taking the sum of all of it's genes. In order to mimic the \textit{Speciation} paper’s initial population, the genes in the initial population are randomly chosen from a uniform distribution with a mean of 0.055 and a range of 0.245 \footnote{The mean of 0.055 and the range of 0.245 were determined mathematically. The final beak-size is equal to the average of two sums of 100 genes, or $(\sum_{i=1}^{200} x_{i})/2$. The distribution of the beak-sizes is normal by the central limit theorem. The mean is $(200 * 0.055)/2 = 5.5$, and the standard deviation is $\sqrt{\frac{1}{4}\sum_{i=1}^{200}Var(x_{i})} = 0.5$ where $Var(x_{i}) = \frac{0.245^2}{12}$.}. This model is a good fit for biological populations, as it represents how a single gene, Bmp4, is responsible for most of the variation in beak-sizes in real Darwinian finches \cite{BMP4}. 
+
+Our experiments use both a complete dominance (Cdom) and an incomplete dominance (Idom) model. In the complete dominance model, the larger of the two phenotypes is chosen for the finch's beak-size. In the incomplete dominance model, the two phenotypes are averaged to determine the beak-size. Note that for the purposes of inheritance this choice is arbitrary, as neither model affects the actual genetic material that is passed on to the child. 
+
+In order to maintain the averaging process, when mating, the genes of each parent are averaged to determine the genes for the child. Each gene has a 10\% chance to mutate after the averaging process. When a gene is selected for mutation, we add a random value taken from a uniform distribution with a range of 0.310 and a mean of 0 \footnote{The running mutation range of 0.310 was determined empirically. We iteratively tested mutation ranges until the standard deviation of the change in beak-size consistently averaged at 0.2}.
+
+Once we demonstrated that the new gene structure had a negligable impact on the results of the simulation, we introduced meiotic inheritance. The only change is that, during mating, rather than average the genes of the parents' chromosomes, the child receives one randomly selected chromosome from each of its parents. The mutation rate and range remain the same.
+
+\subsection{Results}
+
+The results for the meiotic inheritance experiment are given in figure \ref{fig:EXP3} and table \ref{table:EXP3}. The first two columns of figure \ref{fig:EXP3} are equivalent to the last two columns in figure \ref{fig:EXP2} and represent the results from the gene model with averaging inheritnace. Columns three and four represent the introduction of meiotic inheritance. The introduction of meiotic inheritance radically altered the behavior of each population. Specifically, it broadened the population bands and occasionally induced speciation in the BSRM scenarios. Speciation events occur far more frequently in the complete dominance structure than in the incomplete dominance structure.
 
 \begin{figure} [ht!]
     \centering
@@ -209,6 +184,53 @@ The results from the third experiment are given in figure \ref{fig:EXP3} and tab
     }
     \label{table:EXP3}
 \end{table}
+
+\subsection{Analysis}
+
+In the control study, we introduced the new genetic structure but kept the averaging method the same, then compared the results against our findings from the first experiment. As expected, the population trees and extinction rates closely matched our original results. Again, the only major variation was in the extinction rates for the complete dominance structure in the USRM scenario. We suspect that this variation may have been the result of the slight skewing of the phenotypes of the initial population, caused by the switch from incomplete dominance to complete dominance. Nevertheless, this experiment demonstrates that the new genetic structure had little impact on the behavior of the populations.
+
+However, the introduction of meiotic inheritnace radically altered the result of the simulation. Rather than collapsing into narrow bands, each population rapidly expanded to cover the entire range of seed sizes. These extremely thick population bands indicate that the meiotic populations exhibited far more genetic diversity than the non-meiotic populations. Furthermore, unlike the non-meiotic populations, the meiotic populations exhibited evidence of speciation in the BSRM scenario. This observation contradicts the results from the initial \textit{Speciation} paper, where the researchers demonstrated that sexual selection was requisite for sympatric speciation. The key to this discrepancy lies in the mechanism by which genetic information is passed on to the next generation. 
+
+In the original experiment, we average the beak-sizes of the parents to determine the beak-size of the child. While seemingly sensible, this approach destroys important genetic diversity in the population. Barring mutation, any child produced using this method will have a beak-size between the beak-sizes of its parents. When scaled up, this effect causes each generation to cover a smaller range of beak-sizes than the generation that preceded it. Thus, over time, the species begins to coalesce around a single beak-size: population convergence. As the inheritance method pushes the population inwards, the high mutation rate pushes the population outwards, eventually reaching equilibrium at two-unit thick population bands. This equilibrium is why the size of the population bands are the same with regardless of niche size: the inheritance method is the force pushing the population inwards, not natural selection. This effect also explains why we don’t see speciation in the BSRM scenario for non-meiotic populations. Because the gap between the local maxima at three and eight are more than two units apart, there is no stable population that can contain both, forcing one niche to be abandoned.
+
+Contrast this tendency with non-destructive meiotic inheritance, in which genetic information is passed unaltered from parent to child. By keeping the chromosomes the same between generations, meiotic inheritance protects the diversity of the population. There is no guarantee that a child’s beak-size will fall between that of its parents, so future populations can reassert genetic diversity that may not appear in the current distribution of phenotypes. By introducing meiotic inheritance in the third experiment, we removed the pressure towards convergence, allowing the population to diverge to cover the entire range of seed sizes. This change is why the population bands from the third experiment are so much wider than those of the first two: by removing the convergent inheritance method, the only factor restraining the population is the size of its niche. Furthermore, because meiotic populations have no tendency for convergence, and are thus stable at an arbitrary range, they can exploit both population niches in the BSRM scenario.
+
+
+
+\section{Supplemental Analysis}
+
+\subsection{Methods}
+
+
+
+We made two major changes when compared to the initial experiments. First, rather than testing all population conditions, we only looked at the meiotic population conditions and one non-meiotic population condition in the BSRM scenario. Second, we reduced the initial population size from 400 down to 40 to help smooth out the initial population collapse and subsequent rebound that appeared in our initial experiments.
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+\subsection{Experiments 4-5 Notes}
+
+
+
+\subsection{Experiment 4 -- Removing Mutation}
+
+The fourth experiment is designed to illustrate the convergent tendency of the averaging inheritance method by removing the noise caused by mutation. We achieved this effect by reducing the range of the running mutation rate from 0.310 to 0.00. We also quadrupled the initial mutation rate to 0.980 in order to give the starting population sufficient diversity to reach both niches. 
+
+\subsection{Experiment 5 -- Modifying The Initial Population}
+
+The fifth experiment is a response to an unexpected result in our third experiment, where complete dominance exhibited far higher speciation rates than incomplete dominance. In this experiment, we changed the size of the initial population to see the effects on the relative extinction rates between incomplete dominance and complete dominance. For the first test, we widened the initial population by quadrupling the mutation rate to 0.980. In the second test, we reduced the initial population by halving the mutation rate to 0.1225 and moving the mean to 0.80. This change centers the population in the middle of the upper niche.
+
+
 
 
 
@@ -263,21 +285,24 @@ The results of the fifth experiment are given in figure \ref{fig:EXP5} and table
 
 \section{Analysis}
 
-In our first experiment, we were largely successful in replicating the results from the \textit{Speciation} paper. In the BSAM, BSRM, and USAM cases, the population distributions, the widths of the population bands, and the number of extinction events lined up extremely well with what was described in the \textit{Speciation} paper. In the USRM scenario, the population distribution and the widths of the bands were correct, but there were significantly more extinction events than expected. We suspect that this anomaly might be due to a minor difference between our implementation and that of the initial experiment that was not covered in the original paper. Furthermore, it’s worth noting that we experienced another anomaly in the USRM scenario in the second experiment, suggesting that the extinction rates in this scenario might be unusually sensitive to minor changes in experimental setup. However, despite this anomaly, we are confident that we have successfully replicated the \textit{Speciation} paper’s results. 
 
-In the second experiment, we introduced the new genetic structure but kept the averaging method the same, then compared the results against our findings from the first experiment. As expected, the population trees and extinction rates closely matched our original results. Again, the only major variation was in the extinction rates for the complete dominance structure in the USRM scenario. We suspect that this variation may have been the result of the slight skewing of the phenotypes of the initial population, caused by the switch from incomplete dominance to complete dominance. Nevertheless, this experiment demonstrates that the new genetic structure had little impact on the behavior of the populations.
 
-In the third experiment, we used the same genetic structure as the second experiment with the addition of meiotic inheritance. This change radically altered the result of the simulation. Rather than collapsing into narrow bands, each population rapidly expanded to cover the entire range of seed sizes. These extremely thick population bands indicate that the meiotic populations exhibited far more genetic diversity than the non-meiotic populations. Furthermore, unlike the non-meiotic populations, the meiotic populations exhibited evidence of speciation in the BSRM scenario. This observation contradicts the results from the initial \textit{Speciation} paper, where the researchers demonstrated that sexual selection was requisite for sympatric speciation. The key to this discrepancy lies in the mechanism by which genetic information is passed on to the next generation. 
 
-In the original experiment, we average the beak-sizes of the parents to determine the beak-size of the child. While seemingly sensible, this approach destroys important genetic diversity in the population. Barring mutation, any child produced using this method will have a beak-size between the beak-sizes of its parents. When scaled up, this effect causes each generation to cover a smaller range of beak-sizes than the generation that preceded it. Thus, over time, the species begins to coalesce around a single beak-size: population convergence. As the inheritance method pushes the population inwards, the high mutation rate pushes the population outwards, eventually reaching equilibrium at two-unit thick population bands. This equilibrium is why the size of the population bands are the same with regardless of niche size: the inheritance method is the force pushing the population inwards, not natural selection. This effect also explains why we don’t see speciation in the BSRM scenario for non-meiotic populations. Because the gap between the local maxima at three and eight are more than two units apart, there is no stable population that can contain both, forcing one niche to be abandoned.
-
-Contrast this tendency with non-destructive meiotic inheritance, in which genetic information is passed unaltered from parent to child. By keeping the chromosomes the same between generations, meiotic inheritance protects the diversity of the population. There is no guarantee that a child’s beak-size will fall between that of its parents, so future populations can reassert genetic diversity that may not appear in the current distribution of phenotypes. By introducing meiotic inheritance in the third experiment, we removed the pressure towards convergence, allowing the population to diverge to cover the entire range of seed sizes. This change is why the population bands from the third experiment are so much wider than those of the first two: by removing the convergent inheritance method, the only factor restraining the population is the size of its niche. Furthermore, because meiotic populations have no tendency for convergence, and are thus stable at an arbitrary range, they can exploit both population niches in the BSRM scenario.
 
 We observed these effects more clearly in our fourth experiment, where we removed the ability for the population to mutate over time. Without the divergent pressure from mutation, the averaging method immediately coalesced around a single beak-size. As predicted, each generation exhibited less diversity than the generation that proceeded it, eventually forcing the population to abandon one of the niches within a dozen generations. However, with meiotic inheritance, no such trend appeared. While some chromosomes did die out, the handful that survived were stable for the duration of the simulation. Some phenotypes even temporarily disappeared from the population, only to reemerge in later generations. These observations line up well with what we observe in real-world biological populations. Like the meiotic simulations, biological populations tend to exhibit a countable number of discrete phenotypes, and demonstrate high levels of diversity despite extremely low mutation rates [1]. While the simulated non-meiotic populations may look biologically accurate due to high mutation rates, this experiment demonstrates that they are actually governed by vastly different forces than biological populations, making them unreliable for predicting biological behavior. 
 
 However, while we have illustrated why meiotic populations can exhibit speciation in the BSRM scenario, we have not addressed why complete dominance exhibited far higher rates of speciation than incomplete dominance. We believe that this observation is caused by an unrelated property of genetic inheritance, which enables populations to bridge the evolutionary valley between the two optimums via genetic drift. In the case of complete dominance, only one chromosome is actually expressed, thus allowing the non-dominant chromosome to move through the low-fitness valley without reducing the organism’s evolutionary fitness. Eventually, these recessive chromosomes can wander into the second niche, and, when matched, they produce an individual capable of exploiting these untapped resources. With incomplete dominance, both chromosomes are expressed, so the population is unable to bridge the gap on its own. By masking the effect of one of the chromosomes, complete dominance acts as a sort of multiplier on the mutation rate, allowing beneficial mutations to develop over the course of several generations rather than within a single individual. 
 
 Our fifth experiment was designed to test this analysis. Assuming that the change in speciation rates was due to genetic drift through the low-fitness valley, we would expect that increasing the genetic diversity of the initial population would reduce its impact, while reducing the genetic diversity would increase it. Our results confirm this analysis. When the initial population was widened, incomplete dominance performed almost identically to complete dominance, with thirty-nine speciation events to forty-three. However, when the initial population was narrowed and confined to a single niche, there were no speciation events for incomplete dominance and twelve for complete dominance. Note that the averaging method did not produce any speciation events in either condition. These results suggest that both incomplete dominance and complete dominance are equally effective in protecting genetic diversity in a population; complete dominance only performed better in the third experiment because it added a method to bridge the low-fitness valley.
+
+
+
+
+
+
+
+
+
 
 
 
