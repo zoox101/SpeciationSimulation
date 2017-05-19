@@ -1,26 +1,17 @@
+SUBMISSION DEADLINE: July 16
+
 Complete:
-	Move focus away from Mark's paper
-	Abstract too long - Five or six sentences
-	*** Statistical analysis on counts.
-	*** Subgenes are confusing -> Base pairs? How many genes are there?
-	*** Count branching as different from speciation.
 
-Next Up Intro:
-	*** Try to get a figure on the first page - Meiotic inheritance figure
-	Look for other gene models - Evolutionary computation community
-	Other niching methods
+In Progress:
 
-Next Up Other:
-	*** Genetic hitchhiking literature -> Terminology. (Gene masking)
-
-Later Issues:
-	Work on citations 
-	Tailor intro to Artificial Life
-	Submission instructions
-
-??Possible Changes??
-	Switch order
+Current Sprint: 
+	Move 5.2, 5.3, and part of 6.1 to the appendix
+	Add the resource waste picture to the front page
+	Add notes about resource waste
+	Make it clear the simulation was built from the ground up (How do I do this?)
+	Footnote that incomplete dominance is a 50-50 split
+	Make the baseline stat comparison more clear in the tables
 
 
-
-*** Diploid genetic algorithm
+NOTES:
+	The term "diploid genetic algorithm" might be more clear
