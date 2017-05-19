@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.19)  19 MAY 2017 14:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.19)  19 MAY 2017 16:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,85 +503,84 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 60.
+(Font)              <7> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 60.
- [3] [4] [5] <Data/EXP2.jpeg, id=32, 1003.75pt x 1003.75pt>
+(Font)              <5> on input line 66.
+ [3] <Data/EXP2.jpeg, id=21, 1003.75pt x 1003.75pt>
 File: Data/EXP2.jpeg Graphic file (type jpg)
-
-<use Data/EXP2.jpeg>
-Package pdftex.def Info: Data/EXP2.jpeg used on input line 117.
+ <use Data/EXP2.jpeg>
+Package pdftex.def Info: Data/EXP2.jpeg used on input line 82.
 (pdftex.def)             Requested size: 345.0pt x 345.00758pt.
- [6 <./Data/EXP2.jpeg>]
-<Data/EXP3.jpeg, id=36, 1003.75pt x 1003.75pt>
+
+[4] [5 <./Data/EXP2.jpeg>] [6] <Data/EXP3.jpeg, id=37, 1003.75pt x 1003.75pt>
 File: Data/EXP3.jpeg Graphic file (type jpg)
- <use Data/EXP3.jpeg>
-Package pdftex.def Info: Data/EXP3.jpeg used on input line 165.
+
+<use Data/EXP3.jpeg>
+Package pdftex.def Info: Data/EXP3.jpeg used on input line 148.
 (pdftex.def)             Requested size: 345.0pt x 345.00758pt.
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 172--201
+Overfull \hbox (3.46773pt too wide) in paragraph at lines 155--184
  [][] 
  []
 
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 172--201
+Overfull \hbox (3.46773pt too wide) in paragraph at lines 155--184
  [] 
  []
 
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 172--201
+Overfull \hbox (3.46773pt too wide) in paragraph at lines 155--184
  [] 
  []
 
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 172--201
+Overfull \hbox (3.46773pt too wide) in paragraph at lines 155--184
  [] 
  []
 
-[7] <Data/EXP4.jpeg, id=42, 1003.75pt x 501.875pt>
+[7] [8 <./Data/EXP3.jpeg>] [9] <Data/EXP4.jpeg, id=48, 1003.75pt x 501.875pt>
 File: Data/EXP4.jpeg Graphic file (type jpg)
- <use Data/EXP4.jpeg>
-Package pdftex.def Info: Data/EXP4.jpeg used on input line 213.
+
+<use Data/EXP4.jpeg>
+Package pdftex.def Info: Data/EXP4.jpeg used on input line 216.
 (pdftex.def)             Requested size: 345.0pt x 172.50378pt.
-
-[8 <./Data/EXP3.jpeg>] <Data/EXP5.jpeg, id=46, 1003.75pt x 669.50125pt>
+ [10] [11 <./Data/EXP4.jpeg>]
+<Data/EXP5.jpeg, id=55, 1003.75pt x 669.50125pt>
 File: Data/EXP5.jpeg Graphic file (type jpg)
-
-<use Data/EXP5.jpeg>
-Package pdftex.def Info: Data/EXP5.jpeg used on input line 226.
+ <use Data/EXP5.jpeg>
+Package pdftex.def Info: Data/EXP5.jpeg used on input line 235.
 (pdftex.def)             Requested size: 345.0pt x 230.12006pt.
- [9 <./Data/EXP4.jpeg> <./Data/EXP5.jpeg>] [10] [11]
-[12] [13] [14] (./main.bbl) [15] (./main.aux) ) 
+ [12 <./Data/EXP5.jpeg>] [13] [14] [15] (./main.bbl) [16] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  3764 strings out of 494447
  54443 string characters out of 6166766
- 128307 words of memory out of 5000000
+ 125304 words of memory out of 5000000
  7062 multiletter control sequences out of 15000+600000
  8593 words of font info for 30 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  42i,10n,40p,1346b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016basic/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016basi
-c/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016
-basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/
-2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
-ive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/t
-exlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
-l/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><
-/usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
-></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
-fb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
+</usr/l
+ocal/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
+sr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10
 .pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmti10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmti8.pfb>
-Output written on main.pdf (15 pages, 1269718 bytes).
+mi10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi6.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr5.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016basic/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016basic/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on main.pdf (16 pages, 1270558 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 124 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

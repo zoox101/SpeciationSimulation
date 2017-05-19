@@ -1,7 +1,7 @@
 \documentclass{article}
 \title{Synthetic Sympatric Speciation Through Meiotic Inheritance}
-\author{William Booker - Version 2.20}
-\date{February 16, 2017}
+\author{William Booker - Version 3.02}
+\date{May 19, 2017}
 
 \usepackage[utf8]{inputenc}
 \usepackage{natbib}
@@ -47,7 +47,7 @@ The cause of the population convergence in the bimodal seed random mating scenar
 
 \section{Methods}
 
-This research can be divided into three phases: experimental replication, introduction of meiotic inheritance, and supplemental analysis. In the first phase (Experimental Replication), we successfully reproduced the simulation described in the \texit{Speciation} paper and validated the paper's results. In the second phase (Meiotic Inheritance), we modified the simulation to include a meiotic gene model and observed how the change affected the population's speciation potential. In the third phase (Supplemental Analysis), we modified the simulation to observe the effects of meitotic inheritance in a controlled enviornment. 
+This research can be divided into three phases: experimental replication, introduction of meiotic inheritance, and supplemental analysis. In the first phase (Experimental Replication), we successfully reproduced the simulation described in the \textit{Speciation} paper and validated the paper's results. In the second phase (Meiotic Inheritance), we modified the simulation to include a meiotic gene model and observed how the change affected the population's speciation potential. In the third phase (Supplemental Analysis), we modified the simulation to observe the effects of meitotic inheritance in a controlled enviornment. 
 
 The results of our experiments are given in the form of population trees and extinction rates. The trees are organized into tables such that the columns represent gene structures and the rows represent the seed distributions and mating types.
 
@@ -75,16 +75,16 @@ This process results in four discrete cases: bimodal seeds assorted mating (BSAM
 
 \subsection{Results}
 
-The results from the first phase are given in figure \ref{fig:EXP2} and table \ref{table:EXP2} along with some results from the second phase. In figure \ref{fig:EXP2}, the first column represents the extinction rates given in the \texit{Speciation} paper and the second column represents our replicated results. As expected, the results from our replication experiment closely match those from the initial paper. Specifically, we see high rates of speciation in the BSAM and USAM scenarios, and no speciation in the BSRM and USRM scenarios.
+The results from the first phase are given in figure \ref{fig:EXP2} and table \ref{table:EXP2} along with some results from the second phase. In figure \ref{fig:EXP2}, the first column represents the extinction rates given in the \textit{Speciation} paper and the second column represents our replicated results. As expected, the results from our replication experiment closely match those from the initial paper. Specifically, we see high rates of speciation in the BSAM and USAM scenarios, and no speciation in the BSRM and USRM scenarios.
 
-\begin{figure} [h!]
+\begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Data/EXP2}
     \caption{Introduction of Gene Structure}
     \label{fig:EXP2}
 \end{figure}
 
-\begin{table} [ht!]
+\begin{table}
 \centering
     \begin{tabular}{| p{2.75cm} *{4}{|c} |}
         \hline
@@ -143,14 +143,14 @@ Once we demonstrated that the new gene structure had a negligable impact on the 
 
 The results for the meiotic inheritance experiment are given in figure \ref{fig:EXP3} and table \ref{table:EXP3}. The first two columns of figure \ref{fig:EXP3} are equivalent to the last two columns in figure \ref{fig:EXP2} and represent the results from the gene model with averaging inheritnace. Columns three and four represent the introduction of meiotic inheritance. The introduction of meiotic inheritance radically altered the behavior of each population. Specifically, it broadened the population bands and occasionally induced speciation in the BSRM scenarios. Speciation events occur far more frequently in the complete dominance structure than in the incomplete dominance structure.
 
-\begin{figure} [ht!]
+\begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Data/EXP3}
     \caption{Introduction of Meiotic Inheritance}
     \label{fig:EXP3}
 \end{figure}
 
-\begin{table} [hb!]
+\begin{table}
 \centering
     \begin{tabular}{| p{2.75cm} *{4}{|c} |}
         \hline
@@ -199,66 +199,45 @@ Contrast this tendency with non-destructive meiotic inheritance, in which geneti
 
 \section{Supplemental Analysis}
 
-\subsection{Methods}
+\subsection{Overview}
 
+While the previous experiment demonstrates the impact of meiotic inheritance, it does not directly illustrate why that impact came about or why complete dominance illustrated far more speciation events than incomplete dominance in the BSRM scenario. In order to investigate these questions, we developed two additional experiments where we modify several initial population parameters that help shed some light on these observations. 
 
+In these experiments, we made two major changes when compared to the initial experiments. First, rather than testing all population conditions, we only looked at the meiotic population conditions and one non-meiotic population condition in the BSRM scenario. Second, we reduced the initial population size from 400 down to 40 to help smooth out the initial population collapse and subsequent rebound that appeared in our initial experiments.
 
-We made two major changes when compared to the initial experiments. First, rather than testing all population conditions, we only looked at the meiotic population conditions and one non-meiotic population condition in the BSRM scenario. Second, we reduced the initial population size from 400 down to 40 to help smooth out the initial population collapse and subsequent rebound that appeared in our initial experiments.
+\subsection{No Mutation}
 
+This experiment is designed to illustrate the convergent tendency of the averaging inheritance method by removing the noise caused by mutation. We achieved this effect by reducing the range of the running mutation rate from 0.310 to 0.00. We also quadrupled the initial mutation rate to 0.980 in order to give the starting population sufficient diversity to reach both niches. 
 
+The results of this experiment are given in figure \ref{fig:EXP4} and represent the difference between averaging and meiotic inheritance in the absence of mutation. Both simulations utilize an incomplete dominance genetic structure. As expected, the non-meiotic population exhibited clear signs of convergence, while the meiotic population retained population diversity throughout the duration of the simulation. 
 
-
-
-
-
-
-
-
-
-	
-
-
-\subsection{Experiments 4-5 Notes}
-
-
-
-\subsection{Experiment 4 -- Removing Mutation}
-
-The fourth experiment is designed to illustrate the convergent tendency of the averaging inheritance method by removing the noise caused by mutation. We achieved this effect by reducing the range of the running mutation rate from 0.310 to 0.00. We also quadrupled the initial mutation rate to 0.980 in order to give the starting population sufficient diversity to reach both niches. 
-
-\subsection{Experiment 5 -- Modifying The Initial Population}
-
-The fifth experiment is a response to an unexpected result in our third experiment, where complete dominance exhibited far higher speciation rates than incomplete dominance. In this experiment, we changed the size of the initial population to see the effects on the relative extinction rates between incomplete dominance and complete dominance. For the first test, we widened the initial population by quadrupling the mutation rate to 0.980. In the second test, we reduced the initial population by halving the mutation rate to 0.1225 and moving the mean to 0.80. This change centers the population in the middle of the upper niche.
-
-
-
-
-
-\subsection{Experiment 4 -- Removing Mutation}
-
-The results of the fourth experiment are given in figure \ref{fig:EXP4} and represent the difference between averaging and meiotic inheritance in the absence of mutation. Both simulations utilize an incomplete dominance genetic structure. As expected, the non-meiotic population exhibited clear signs of convergence, while the meiotic population retained population diversity throughout the duration of the simulation. 
-
-\begin{figure} [ht!]
+\begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Data/EXP4}
     \caption{Removed Mutation}
     \label{fig:EXP4}
 \end{figure}
 
+As illustrated in figure \ref{fig:EXP4}, without the divergent pressure from mutation, the averaging method immediately coalesced around a single beak-size. As predicted, each generation exhibited less diversity than the generation that proceeded it, eventually forcing the population to abandon one of the niches within a dozen generations. However, with meiotic inheritance, no such trend appeared. While some chromosomes did die out, the handful that survived were stable for the duration of the simulation. Some phenotypes even temporarily disappeared from the population, only to reemerge in later generations. These observations line up well with what we observe in real-world biological populations. Like the meiotic simulations, biological populations tend to exhibit a countable number of discrete phenotypes, and demonstrate high levels of diversity despite extremely low mutation rates \TODO{CITE THIS}. While the simulated non-meiotic populations may look biologically accurate due to high mutation rates, this experiment demonstrates that they are actually governed by vastly different forces than biological populations, making them unreliable for predicting biological behavior. 
 
+\subsection{Initial Population}
 
-\subsection{Experiment 5 -- Modifying The Initial Population} 
+While we have illustrated why meiotic populations can exhibit speciation in the BSRM scenario, we have not addressed why complete dominance exhibited far higher rates of speciation than incomplete dominance. We believe that this observation is caused by an unrelated property of genetic inheritance, which enables populations to bridge the evolutionary valley between the two optimums via genetic drift. In the case of complete dominance, only one chromosome is actually expressed, thus allowing the non-dominant chromosome to move through the low-fitness valley without reducing the organism’s evolutionary fitness. Eventually, these recessive chromosomes can wander into the second niche, and, when matched, they produce an individual capable of exploiting these untapped resources. With incomplete dominance, both chromosomes are expressed, so the population is unable to bridge the gap on its own. By masking the effect of one of the chromosomes, complete dominance acts as a sort of multiplier on the mutation rate, allowing beneficial mutations to develop over the course of several generations rather than within a single individual. 
 
-The results of the fifth experiment are given in figure \ref{fig:EXP5} and table \ref{table:EXP5}. The first column of figure \ref{fig:EXP5} represents the incomplete dominance case with the averaging inheritance method. The second and third columns represent meiotic inheritance with incomplete and complete dominance. When the population was widened, both meiotic populations exhibited high rates of speciation. When the population was narrowed, only the complete dominance case speciated, and the rate of speciation was drastically reduced. The non-meiotic population exhibited no speciation events in either scenario. 
+This experiment was designed to test this analysis. Assuming that the change in speciation rates was due to genetic drift through the low-fitness valley, we would expect that increasing the genetic diversity of the initial population would reduce its impact, while reducing the genetic diversity would increase it.
 
-\begin{figure} [ht!]
+In this experiment, we changed the size of the initial population to see the effects on the relative extinction rates between incomplete dominance and complete dominance. For the first test, we widened the initial population by quadrupling the mutation rate to 0.980. In the second test, we reduced the initial population by halving the mutation rate to 0.1225 and moving the mean to 0.80. This change centers the population in the middle of the upper niche.
+
+The results of the this experiment are given in figure \ref{fig:EXP5} and table \ref{table:EXP5}. The first column of figure \ref{fig:EXP5} represents the incomplete dominance case with the averaging inheritance method. The second and third columns represent meiotic inheritance with incomplete and complete dominance. When the population was widened, both meiotic populations exhibited high rates of speciation. When the population was narrowed, only the complete dominance case speciated, and the rate of speciation was drastically reduced. The non-meiotic population exhibited no speciation events in either scenario. 
+
+\begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Data/EXP5}
     \caption{BSRM Scenario with Varying Initial Populations}
     \label{fig:EXP5}
 \end{figure}
 
-\begin{table} [htbp]
+\begin{table}
 \centering
     \begin{tabular}{| p{2.75cm} *{3}{|c} |}
         \hline
@@ -281,28 +260,7 @@ The results of the fifth experiment are given in figure \ref{fig:EXP5} and table
     \label{table:EXP5}
 \end{table}
 
-
-
-\section{Analysis}
-
-
-
-
-
-We observed these effects more clearly in our fourth experiment, where we removed the ability for the population to mutate over time. Without the divergent pressure from mutation, the averaging method immediately coalesced around a single beak-size. As predicted, each generation exhibited less diversity than the generation that proceeded it, eventually forcing the population to abandon one of the niches within a dozen generations. However, with meiotic inheritance, no such trend appeared. While some chromosomes did die out, the handful that survived were stable for the duration of the simulation. Some phenotypes even temporarily disappeared from the population, only to reemerge in later generations. These observations line up well with what we observe in real-world biological populations. Like the meiotic simulations, biological populations tend to exhibit a countable number of discrete phenotypes, and demonstrate high levels of diversity despite extremely low mutation rates [1]. While the simulated non-meiotic populations may look biologically accurate due to high mutation rates, this experiment demonstrates that they are actually governed by vastly different forces than biological populations, making them unreliable for predicting biological behavior. 
-
-However, while we have illustrated why meiotic populations can exhibit speciation in the BSRM scenario, we have not addressed why complete dominance exhibited far higher rates of speciation than incomplete dominance. We believe that this observation is caused by an unrelated property of genetic inheritance, which enables populations to bridge the evolutionary valley between the two optimums via genetic drift. In the case of complete dominance, only one chromosome is actually expressed, thus allowing the non-dominant chromosome to move through the low-fitness valley without reducing the organism’s evolutionary fitness. Eventually, these recessive chromosomes can wander into the second niche, and, when matched, they produce an individual capable of exploiting these untapped resources. With incomplete dominance, both chromosomes are expressed, so the population is unable to bridge the gap on its own. By masking the effect of one of the chromosomes, complete dominance acts as a sort of multiplier on the mutation rate, allowing beneficial mutations to develop over the course of several generations rather than within a single individual. 
-
-Our fifth experiment was designed to test this analysis. Assuming that the change in speciation rates was due to genetic drift through the low-fitness valley, we would expect that increasing the genetic diversity of the initial population would reduce its impact, while reducing the genetic diversity would increase it. Our results confirm this analysis. When the initial population was widened, incomplete dominance performed almost identically to complete dominance, with thirty-nine speciation events to forty-three. However, when the initial population was narrowed and confined to a single niche, there were no speciation events for incomplete dominance and twelve for complete dominance. Note that the averaging method did not produce any speciation events in either condition. These results suggest that both incomplete dominance and complete dominance are equally effective in protecting genetic diversity in a population; complete dominance only performed better in the third experiment because it added a method to bridge the low-fitness valley.
-
-
-
-
-
-
-
-
-
+As expected, when the initial population was widened, incomplete dominance performed almost identically to complete dominance, with thirty-nine speciation events to forty-three. However, when the initial population was narrowed and confined to a single niche, there were no speciation events for incomplete dominance and twelve for complete dominance (the averaging method did not produce any speciation events in either condition). These results suggest that both incomplete dominance and complete dominance are equally effective in protecting genetic diversity in a population; complete dominance only performed better in the third experiment because it added a method to bridge the low-fitness valley.
 
 
 
