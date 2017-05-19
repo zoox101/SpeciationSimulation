@@ -5,6 +5,7 @@ Complete:
 In Progress:
 
 Current Sprint: 
+	Check male reproduction limitation
 	Move 5.2, 5.3, and part of 6.1 to the appendix
 	Add the resource waste picture to the front page
 	Add notes about resource waste
