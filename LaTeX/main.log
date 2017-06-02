@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.19)  19 MAY 2017 18:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.19)  2 JUN 2017 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,32 +503,32 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 64.
+(Font)              <7> on input line 62.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 64.
+(Font)              <5> on input line 62.
  [3] [4] <Data/EXP3.jpeg, id=29, 1003.75pt x 1003.75pt>
 File: Data/EXP3.jpeg Graphic file (type jpg)
 
 <use Data/EXP3.jpeg>
-Package pdftex.def Info: Data/EXP3.jpeg used on input line 98.
+Package pdftex.def Info: Data/EXP3.jpeg used on input line 92.
 (pdftex.def)             Requested size: 345.0pt x 345.00758pt.
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 105--134
+Overfull \hbox (3.46773pt too wide) in paragraph at lines 99--128
  [][] 
  []
 
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 105--134
+Overfull \hbox (3.46773pt too wide) in paragraph at lines 99--128
  [] 
  []
 
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 105--134
+Overfull \hbox (3.46773pt too wide) in paragraph at lines 99--128
  [] 
  []
 
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 105--134
+Overfull \hbox (3.46773pt too wide) in paragraph at lines 99--128
  [] 
  []
 
@@ -536,26 +536,26 @@ Overfull \hbox (3.46773pt too wide) in paragraph at lines 105--134
 File: Data/EXP4.jpeg Graphic file (type jpg)
 
 <use Data/EXP4.jpeg>
-Package pdftex.def Info: Data/EXP4.jpeg used on input line 164.
+Package pdftex.def Info: Data/EXP4.jpeg used on input line 158.
 (pdftex.def)             Requested size: 345.0pt x 172.50378pt.
- [8] [9 <./Data/EXP4.jpeg>]
-<Data/EXP5.jpeg, id=48, 1003.75pt x 669.50125pt>
+ [8 <./Data/EXP4.jpeg>]
+<Data/EXP5.jpeg, id=45, 1003.75pt x 669.50125pt>
 File: Data/EXP5.jpeg Graphic file (type jpg)
  <use Data/EXP5.jpeg>
-Package pdftex.def Info: Data/EXP5.jpeg used on input line 183.
+Package pdftex.def Info: Data/EXP5.jpeg used on input line 177.
 (pdftex.def)             Requested size: 345.0pt x 230.12006pt.
- [10 <./Data/EXP5.jpeg>] [11] [12] [13] <Data/EXP2.jpeg, id=63, 1003.75pt x 100
-3.75pt>
+ [9]
+[10 <./Data/EXP5.jpeg>] [11] [12] [13]
+<Data/EXP2.jpeg, id=63, 1003.75pt x 1003.75pt>
 File: Data/EXP2.jpeg Graphic file (type jpg)
-
-<use Data/EXP2.jpeg>
-Package pdftex.def Info: Data/EXP2.jpeg used on input line 243.
+ <use Data/EXP2.jpeg>
+Package pdftex.def Info: Data/EXP2.jpeg used on input line 237.
 (pdftex.def)             Requested size: 345.0pt x 345.00758pt.
  [14 <./Data/EXP2.jpeg>] [15] (./main.bbl) [16] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  3764 strings out of 494447
  54443 string characters out of 6166766
- 124305 words of memory out of 5000000
+ 123305 words of memory out of 5000000
  7062 multiletter control sequences out of 15000+600000
  8593 words of font info for 30 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
@@ -578,7 +578,7 @@ msfonts/cm/cmr7.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public
 ic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb>
-Output written on main.pdf (16 pages, 1270494 bytes).
+Output written on main.pdf (16 pages, 1270129 bytes).
 PDF statistics:
  124 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream
