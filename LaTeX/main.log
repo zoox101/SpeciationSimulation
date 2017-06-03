@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.19)  2 JUN 2017 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.19)  3 JUN 2017 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -536,26 +536,26 @@ Overfull \hbox (3.46773pt too wide) in paragraph at lines 99--128
 File: Data/EXP4.jpeg Graphic file (type jpg)
 
 <use Data/EXP4.jpeg>
-Package pdftex.def Info: Data/EXP4.jpeg used on input line 158.
+Package pdftex.def Info: Data/EXP4.jpeg used on input line 156.
 (pdftex.def)             Requested size: 345.0pt x 172.50378pt.
  [8 <./Data/EXP4.jpeg>]
 <Data/EXP5.jpeg, id=45, 1003.75pt x 669.50125pt>
 File: Data/EXP5.jpeg Graphic file (type jpg)
  <use Data/EXP5.jpeg>
-Package pdftex.def Info: Data/EXP5.jpeg used on input line 177.
+Package pdftex.def Info: Data/EXP5.jpeg used on input line 175.
 (pdftex.def)             Requested size: 345.0pt x 230.12006pt.
  [9]
 [10 <./Data/EXP5.jpeg>] [11] [12] [13]
 <Data/EXP2.jpeg, id=63, 1003.75pt x 1003.75pt>
 File: Data/EXP2.jpeg Graphic file (type jpg)
  <use Data/EXP2.jpeg>
-Package pdftex.def Info: Data/EXP2.jpeg used on input line 237.
+Package pdftex.def Info: Data/EXP2.jpeg used on input line 235.
 (pdftex.def)             Requested size: 345.0pt x 345.00758pt.
  [14 <./Data/EXP2.jpeg>] [15] (./main.bbl) [16] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  3764 strings out of 494447
  54443 string characters out of 6166766
- 123305 words of memory out of 5000000
+ 126305 words of memory out of 5000000
  7062 multiletter control sequences out of 15000+600000
  8593 words of font info for 30 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
@@ -578,7 +578,7 @@ msfonts/cm/cmr7.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public
 ic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb>
-Output written on main.pdf (16 pages, 1270129 bytes).
+Output written on main.pdf (16 pages, 1269724 bytes).
 PDF statistics:
  124 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream
