@@ -2,17 +2,17 @@ SUBMISSION DEADLINE: July 16
 
 Complete:
 	Check male reproduction limitation
+	Move 5.2, 5.3, and part of 6.1 to the appendix
+	Make the baseline stat comparison more clear in the tables
 
 In Progress:
 
 Current Sprint: 
 	Rename incomplete dominance structure in figure 1.
-	Move 5.2, 5.3, and part of 6.1 to the appendix
 	Add the resource waste picture to the front page
 	Add notes about resource waste
 	Make it clear the simulation was built from the ground up (How do I do this?)
 	Footnote that incomplete dominance is a 50-50 split
-	Make the baseline stat comparison more clear in the tables
 
 NOTES:
 	The term "diploid genetic algorithm" might be more clear
