@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.19)  3 JUN 2017 13:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.19)  10 JUN 2017 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -498,65 +498,70 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 18.
+ <Data/FrontPage.jpeg, id=1, 566.115pt x 444.66125pt>
+File: Data/FrontPage.jpeg Graphic file (type jpg)
+
+<use Data/FrontPage.jpeg>
+Package pdftex.def Info: Data/FrontPage.jpeg used on input line 32.
+(pdftex.def)             Requested size: 345.0pt x 270.99191pt.
  [1
 
 {/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
-]
+ <./Data/FrontPage.jpeg>] [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 62.
+(Font)              <7> on input line 67.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 62.
- [3] [4] <Data/EXP3.jpeg, id=29, 1003.75pt x 1003.75pt>
+(Font)              <5> on input line 67.
+ [4]
+<Data/EXP3.jpeg, id=25, 1003.75pt x 1003.75pt>
 File: Data/EXP3.jpeg Graphic file (type jpg)
-
-<use Data/EXP3.jpeg>
-Package pdftex.def Info: Data/EXP3.jpeg used on input line 92.
+ <use Data/EXP3.jpeg>
+Package pdftex.def Info: Data/EXP3.jpeg used on input line 97.
 (pdftex.def)             Requested size: 345.0pt x 345.00758pt.
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 99--128
+Overfull \hbox (3.46773pt too wide) in paragraph at lines 104--133
  [][] 
  []
 
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 99--128
+Overfull \hbox (3.46773pt too wide) in paragraph at lines 104--133
  [] 
  []
 
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 99--128
+Overfull \hbox (3.46773pt too wide) in paragraph at lines 104--133
  [] 
  []
 
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 99--128
+Overfull \hbox (3.46773pt too wide) in paragraph at lines 104--133
  [] 
  []
 
-[5] [6 <./Data/EXP3.jpeg>] [7] <Data/EXP4.jpeg, id=41, 1003.75pt x 501.875pt>
+[5] [6 <./Data/EXP3.jpeg>] [7] [8]
+<Data/EXP4.jpeg, id=45, 1003.75pt x 501.875pt>
 File: Data/EXP4.jpeg Graphic file (type jpg)
-
-<use Data/EXP4.jpeg>
-Package pdftex.def Info: Data/EXP4.jpeg used on input line 156.
+ <use Data/EXP4.jpeg>
+Package pdftex.def Info: Data/EXP4.jpeg used on input line 161.
 (pdftex.def)             Requested size: 345.0pt x 172.50378pt.
- [8 <./Data/EXP4.jpeg>]
-<Data/EXP5.jpeg, id=45, 1003.75pt x 669.50125pt>
+ [9 <./Data/EXP4.jpeg>] <Data/EXP5.jpeg, id=49, 1003.75pt x 669.50125pt>
 File: Data/EXP5.jpeg Graphic file (type jpg)
- <use Data/EXP5.jpeg>
-Package pdftex.def Info: Data/EXP5.jpeg used on input line 175.
+
+<use Data/EXP5.jpeg>
+Package pdftex.def Info: Data/EXP5.jpeg used on input line 180.
 (pdftex.def)             Requested size: 345.0pt x 230.12006pt.
- [9]
-[10 <./Data/EXP5.jpeg>] [11] [12] [13]
-<Data/EXP2.jpeg, id=63, 1003.75pt x 1003.75pt>
+ [10] [11 <./Data/EXP5.jpeg>] [12] [13]
+<Data/EXP2.jpeg, id=64, 1003.75pt x 1003.75pt>
 File: Data/EXP2.jpeg Graphic file (type jpg)
  <use Data/EXP2.jpeg>
-Package pdftex.def Info: Data/EXP2.jpeg used on input line 235.
+Package pdftex.def Info: Data/EXP2.jpeg used on input line 240.
 (pdftex.def)             Requested size: 345.0pt x 345.00758pt.
  [14 <./Data/EXP2.jpeg>] [15] (./main.bbl) [16] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 3764 strings out of 494447
- 54443 string characters out of 6166766
- 126305 words of memory out of 5000000
- 7062 multiletter control sequences out of 15000+600000
+ 3770 strings out of 494447
+ 54566 string characters out of 6166766
+ 127313 words of memory out of 5000000
+ 7067 multiletter control sequences out of 15000+600000
  8593 words of font info for 30 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  42i,10n,40p,1346b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -578,10 +583,10 @@ msfonts/cm/cmr7.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public
 ic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti8.pfb>
-Output written on main.pdf (16 pages, 1269724 bytes).
+Output written on main.pdf (16 pages, 1329249 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
+ 125 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
