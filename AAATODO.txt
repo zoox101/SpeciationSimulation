@@ -4,12 +4,12 @@ Complete:
 	Check male reproduction limitation
 	Move 5.2, 5.3, and part of 6.1 to the appendix
 	Make the baseline stat comparison more clear in the tables
+	Add the resource waste picture to the front page
 
 In Progress:
 
 Current Sprint: 
 	Rename incomplete dominance structure in figure 1.
-	Add the resource waste picture to the front page
 	Add notes about resource waste
 	Make it clear the simulation was built from the ground up (How do I do this?)
 	Footnote that incomplete dominance is a 50-50 split
