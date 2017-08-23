@@ -1,0 +1,27 @@
+EvoStar 2018 Parma
+DEADLINE: 1 November 2017
+Specializing in Genetic Algorithms
+Parma, Italy. 4-6 April 2018
+http://www.evostar.org/2018/
+
+GECCO 2018 @ Kyoto
+DEADLINE: January 30, 2018
+Genetic and Evolutionary Computation Conference
+Kyoto, Japan. 15-19 July 2018
+http://gecco-2018.sigevo.org/index.html/HomePage
+
+BIOMA 2018
+DEADLINE: Dec 1, 2017
+Bio-inspired Optimization Conference
+Paris, France. 16-18 May 2018
+https://bioma2018.sciencesconf.org/
+
+IEEE WCCI 2018
+DEADLINE: Jan 15, 2018
+Evolutionary Computation Conference
+Rio de Janeiro, Brazil. 8-13 July 2018
+http://www.ecomp.poli.br/~wcci2018/
+
+MISC RESOURCES
+GA Conferences: http://geneticprogramming.com/conferences/
+EComp Conferences: http://www.macs.hw.ac.uk/~ml355/confcal/home.php
