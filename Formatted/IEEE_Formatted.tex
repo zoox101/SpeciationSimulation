@@ -1,32 +1,40 @@
+
 \documentclass[conference]{IEEEtran}
 
-\title{Synthetic Sympatric Speciation Through Meiotic Inheritance}
-\author{William Booker - Version 3.41}
-\date{Jun 19, 2017}
-
-\usepackage[utf8]{inputenc}
-\usepackage{natbib}
 \usepackage{graphicx}
-\usepackage{subcaption}
-\usepackage{xcolor}
-\newcommand\TODO[1]{\textcolor{red}{#1}}
-
-
+\usepackage{stfloats}
+\usepackage{color, colortbl}
+\definecolor{Grey}{rgb}{0.90,0.90,0.90}
 
 \begin{document}
-\captionsetup{justification=centering}
+\title{Synthetic Sympatric Speciation\\ Through Meiotic Inheritance}
+
+\author{\IEEEauthorblockN{William Booker}
+\IEEEauthorblockA{
+School of Computer Science\\
+University of Oklahoma\\
+Norman, OK 73072\\
+Email: william@thebookers.net}
+\and
+\IEEEauthorblockN{Dean Hougen}
+\IEEEauthorblockA{
+School of Computer Science\\
+University of Oklahoma\\
+Norman, OK 73072\\
+Email: hougen@ou.edu}}
 
 \maketitle
-
-%\TODO{GET GRAPHS IN THE RIGHT PLACE}
-%\TODO{ADD ADDITIONAL CITATIONS}
-%\TODO{CHECK TENSE CHANGES?}
-
-\section{Abstract}
-
+\begin{abstract}
 Speciation is a critical process in both evolutionary science and machine learning. It helps us understand the development of life on Earth and can improve genetic algorithms' ability to find global maximums. In recent years, there has been considerable effort to understand this elusive process and uncover new techniques to simulate it. While there are many approaches for doing so, few examine one of the most important features of any genetic system: inheritance. This paper seeks to address this shortcoming and demonstrate how minor changes to a population's inheritance mechanism can radically alter a it's ability to speciate. Specifically, we look at how simulated meiotic inheritance with complete genetic dominance can significantly improve a population's divergent capability, even in absence of other speciation pressures. 
+\end{abstract}
 
 \section{Introduction}
+
+Speciation describes the natural tendency for homogeneous populations to split and form discrete groups through the continuous process of evolution. \cite{SPBOOK} It underpins our understanding of biology and it is fundamental to the development of life on this planet. Additionally, speciation shows promise in the realm of artificial intelligence, as a mechanism by which to narrow in on optimal results in multi-modal solution spaces.
+
+Evolutionary biologists define two distinct types of speciation: allopatric speciation, where isolated populations acquire new traits independently, and sympatric speciation, where a single population diverges over time. For our purposes, we are mostly concerned with sympatric speciation, as it has significant untapped potential for improving genetic algorithms. While there are many methods for inducing a type of allopatric speciation in genetic algorithms, such as such as niching \cite{NICHING}, population topologies \cite{TOPOLOGIES}, and island models \cite{ISLAND}, these approaches require implicit assumptions about the solution space which must be explicitly tailored to each problem. Ideally we would like to find a more general solution, where the algorithm speciates correctly in a number of different environments. 
+
+For our experiments in sympatric speciation, we chose to examine an evolutionary model designed by Mark Woener et al. as part of the paper \textit{Sexual Selection, Resource Distribution, and Population Size in Synthetic Sympatric Speciation}. In the paper, the researchers hypothesized that sexual selection may be key to inducing sympatric speciation, as it has the potential to isolate sub-groups within a population, which could then evolve different traits in a similar manner to allopatric speciation. To test this hypothesis, the researchers set up a 2x2 factorial study using a simulated population of finches. In the study, the researches created two different distributions of seeds, bimodal and uniform, and observed the differences in population dynamics between finches that utilized sexual selection and those that did not.
 
 \begin{figure}[t]
     \centering
@@ -35,15 +43,7 @@ Speciation is a critical process in both evolutionary science and machine learni
     \label{fig:FrontPage}
 \end{figure}
 
-Speciation describes the natural tendency for homogeneous populations to split and form discrete groups through the continuous process of evolution. \cite{SPBOOK} It underpins our understanding of biology and it is fundamental to the development of life on this planet. Additionally, speciation shows promise in the realm of artificial intelligence, as a mechanism by which to narrow in on optimal results in multi-modal solution spaces.
-
-Evolutionary biologists define two distinct types of speciation: allopatric speciation, where isolated populations acquire new traits independently, and sympatric speciation, where a single population diverges over time. For our purposes, we are mostly concerned with sympatric speciation, as it has significant untapped potential for improving genetic algorithms. While there are many methods for inducing a type of allopatric speciation in genetic algorithms, such as such as niching \cite{NICHING}, population topologies \cite{TOPOLOGIES}, and island models \cite{ISLAND}, these approaches require implicit assumptions about the solution space which must be explicitly tailored to each problem. Ideally we would like to find a more general solution, where the algorithm speciates correctly in a number of different environments. 
-
-For our experiments in sympatric speciation, we chose to examine an evolutionary model designed my Mark Woener et al. as part of the paper \textit{Sexual Selection, Resource Distribution, and Population Size in Synthetic Sympatric Speciation}. In the paper, the researchers hypothesized that sexual selection may be key to inducing sympatric speciation, as it has the potential to isolate sub-groups within a population, which could then evolve different traits in a similar manner to allopatric speciation. To test this hypothesis, the researchers set up a 2x2 factorial study using a simulated population of finches. In the study, the researches created two different distributions of seeds, bimodal and uniform, and observed the differences in population dynamics between finches that utilized sexual selection and those that did not.
-
 While the researchers successfully demonstrated that sexual selection could induce sympatric speciation in synthetic populations, they did not address how their results differed from speciation in the biological world. Specifically, in the simulation, when a population without sexual selection encountered a bimodal seed distribution, the population never expanded to cover both possible niches. This result is peculiar, as any species is highly incentivized to take advantage of all available niches in its environment. The convergence exhibited in the bimodal seed random mating scenario is known as bottlenecking, and typically only occurs in small, declining populations \cite{CHICKEN}. To see bottlenecking occurring in our large, healthy population suggests that there may be another factor at play, which may be enabling more phylogenetic divergence in biological populations.
-
-
 
 \section{Hypothesis}
 
@@ -93,47 +93,39 @@ When mating, the child receives one randomly selected chromosome from each of it
 
 The results for the meiotic inheritance experiment are given in figure \ref{fig:EXP3} and table \ref{table:EXP3}. Columns one and three of figure \ref{fig:EXP3} represent the results from the gene model without meiotic inheritance. Columns two and four represent the introduction of meiotic inheritance. When testing for statistical significance, each dominance case is compared against the respective dominance case from the control study. 
 
-\begin{figure}
+\begin{figure*}
     \centering
     \includegraphics[width=\linewidth]{Data/EXP3}
     \caption{Introduction of Meiotic Inheritance}
     \label{fig:EXP3}
-\end{figure}
+\end{figure*}
 
-\begin{table}
+\begin{table*}
 \centering
-    \begin{tabular}{| p{2.75cm} *{4}{|c} |}
-        \hline
+    \caption{Introducing Meiotic Inheritance: Bold is statistically significant at 1\%. Italics are statistically significant at 5\%.}
+    \begin{tabular}{| p{3.00cm} *{4}{|c} |}
+        \hline 
+        \rowcolor{Grey}
         BSAM & Avg Idom & Meiosis Idom & Avg Cdom & Meiosis Cdom \\ \hline
         Speciation & 25 & 31 & 23 & 20 \\ \hline
         Partial Extinction & 23 & \textit{15} & 21 & 27 \\ \hline
         Extinction & 0 & 2 & 4 & 1 \\ \hline
-    \end{tabular}
-    \begin{tabular}{| p{2.75cm} *{4}{|c} |}
-        \hline
+        \rowcolor{Grey}
         BSRM & Avg Idom & Meiosis Idom & Avg Cdom & Meiosis Cdom \\ \hline
         Speciation & 0 & 1 & 0 & \textbf{33} \\ \hline
         Partial Extinction & 35 & 30 & 35 & \textbf{14} \\ \hline
         Extinction & 13 & 17 & 13 & \textbf{1} \\ \hline
-    \end{tabular}
-    \begin{tabular}{| p{2.75cm} *{4}{|c} |}
-        \hline
+        \rowcolor{Grey}
         USAM & Avg Idom & Meiosis Idom & Avg Cdom & Meiosis Cdom \\ \hline
         Branching & 41 & 37 & 41 & 41 \\ \hline
         Extinction & 7 & 11 & 7 & 7 \\ \hline
-    \end{tabular}
-    \begin{tabular}{| p{2.75cm} *{4}{|c} |}
-        \hline
+        \rowcolor{Grey}
         USRM & Avg Idom & Meiosis Idom & Avg Cdom & Meiosis Cdom \\ \hline
         Single Species & 24 & \textbf{44} & 34 & 40 \\ \hline
         Extinction & 24 & \textbf{4} & 14 & 8 \\ \hline
     \end{tabular}
-    \caption{
-        Introducing Meiotic Inheritance \newline
-        \textit{Bold is statistically significant at 1\%. Italics are statistically significant at 5\%.} 
-    }
     \label{table:EXP3}
-\end{table}
+\end{table*}
 
 \subsection{Analysis}
 
@@ -157,58 +149,55 @@ For simplicity, in these experiments, we made two changes to the simulation. Fir
 
 \subsection{No Mutation}
 
-This experiment is designed to illustrate the convergent tendency of non-meiotic inheritance by removing the noise created by mutation. We achieved this effect by reducing the range of the running mutation rate from 0.310 to 0.00. We also quadrupled the initial mutation rate to 0.980 to give the starting population sufficient diversity to reach both niches. Both simulations utilize an incomplete dominance genetic structure. 
-
-The results of this experiment are given in figure \ref{fig:EXP4} and represent the difference between non-meiotic and meiotic inheritance in the absence of mutation. As expected, the non-meiotic population exhibited clear signs of convergence, while the meiotic population retained population diversity throughout the duration of the simulation. 
-
-\begin{figure}
+\begin{figure*}[ht]
     \centering
     \includegraphics[width=\linewidth]{Data/EXP4}
     \caption{Removed Mutation}
     \label{fig:EXP4}
-\end{figure}
+\end{figure*}
+
+This experiment is designed to illustrate the convergent tendency of non-meiotic inheritance by removing the noise created by mutation. We achieved this effect by reducing the range of the running mutation rate from 0.310 to 0.00. We also quadrupled the initial mutation rate to 0.980 to give the starting population sufficient diversity to reach both niches. Both simulations utilize an incomplete dominance genetic structure. 
+
+The results of this experiment are given in figure \ref{fig:EXP4} and represent the difference between non-meiotic and meiotic inheritance in the absence of mutation. As expected, the non-meiotic population exhibited clear signs of convergence, while the meiotic population retained population diversity throughout the duration of the simulation. 
 
 Without the divergent pressure from mutation, the non-meiotic inheritance method immediately coalesced around a single beak-size. Each generation exhibited less diversity than the generation that proceeded it, eventually forcing the population to abandon one of the niches within a dozen generations. However, with meiotic inheritance, no such trend appeared. While some chromosomes did die out, the handful that survived were stable for the duration of the simulation. Some phenotypes even temporarily disappeared from the population, only to reemerge in later generations. These observations line up well with what we observe in real-world biological populations, which tend to exhibit a countable number of discrete phenotypes and demonstrate high levels of diversity despite extremely low mutation rates. While the simulated non-meiotic populations may look biologically accurate due to high mutation rates, this experiment demonstrates that they are actually governed by vastly different forces than real-world populations, making them unreliable for predicting biological behavior. 
 
 \subsection{Initial Population}
 
+\begin{figure*}
+    \centering
+    \includegraphics[width=\linewidth]{Data/EXP5}
+    \caption{BSRM Scenario with Varying Initial Populations}
+    \label{fig:EXP5}
+\end{figure*}
+
 Our initial experiment demonstrated that speciation is possible in meiotic populations in the BSRM scenario, but it did not address why complete dominance exhibited far higher rates of speciation than incomplete dominance. We believe that this phenomenon is caused by an unrelated property of genetic inheritance, which enables populations to bridge the evolutionary valley between the two optimums via genetic drift. In the case of complete dominance, only one chromosome is actually expressed, thus allowing the non-dominant chromosome to move through the low-fitness valley without reducing the organism’s evolutionary fitness. Eventually, these recessive chromosomes can wander into the second niche, and, when matched, they produce an individual capable of exploiting these untapped resources. With incomplete dominance, both chromosomes are expressed, so the population is unable to bridge the gap on its own. By masking the effect of one of the chromosomes, complete dominance acts as a multiplier on the mutation rate, allowing beneficial mutations to develop over the course of several generations rather than within a single individual. 
+
+\begin{table}
+\centering
+    \caption{
+        BSRM Scenario with Varying Initial Populations: Bold is statistically significant at 1\%. Italics are statistically significant at 5\%.}
+    \begin{tabular}{| p{2.75cm} *{3}{|c} |}
+        \hline
+        \rowcolor{Grey}
+        Wide & Avg Idom & Meiosis Idom & Meiosis Cdom \\ \hline
+        Speciation & 0 & \textbf{39} & \textbf{43} \\ \hline
+        Partial Extinction & 45 & \textbf{9} & \textbf{5} \\ \hline
+        Extinction & 3 & 0 & 0 \\ \hline
+        \rowcolor{Grey}
+        Narrow & Avg Idom & Meiosis Idom & Meiosis Cdom \\ \hline
+        Speciation & 0 & 0 & \textbf{12} \\ \hline
+        Partial Extinction & 46 & 48 & \textbf{33} \\ \hline
+        Extinction & 2 & 0 & 3 \\ \hline
+    \end{tabular}
+    \label{table:EXP5}
+\end{table}
 
 This experiment was designed to test this analysis. Assuming that the change in speciation rates was due to genetic drift through the low-fitness valley, we would expect that increasing the genetic diversity of the initial population would reduce its impact, while reducing the genetic diversity would increase it.
 
 In this experiment, we changed the size of the initial population to see the effects on the extinction rates between incomplete dominance and complete dominance. For the first test, we widened the initial population to cover both niches by quadrupling the initial mutation rate to 0.980. In the second test, we reduced the initial population by halving the initial mutation rate to 0.1225 and moving the mean to 0.80. This change centers the population in the middle of the upper niche.
 
 The results of the this experiment are given in figure \ref{fig:EXP5} and table \ref{table:EXP5}. The first column of figure \ref{fig:EXP5} represents the incomplete dominance case with the averaging inheritance method. The second and third columns represent meiotic inheritance with incomplete and complete dominance. When the population was widened, both meiotic populations exhibited high rates of speciation. When the population was narrowed, only the complete dominance case speciated, and the rate of speciation was dramatically reduced. The non-meiotic population exhibited no speciation events in either scenario. 
-
-\begin{figure}
-    \centering
-    \includegraphics[width=\linewidth]{Data/EXP5}
-    \caption{BSRM Scenario with Varying Initial Populations}
-    \label{fig:EXP5}
-\end{figure}
-
-\begin{table}
-\centering
-    \begin{tabular}{| p{2.75cm} *{3}{|c} |}
-        \hline
-        Wide & Avg Idom & Meiosis Idom & Meiosis Cdom \\ \hline
-        Speciation & 0 & \textbf{39} & \textbf{43} \\ \hline
-        Partial Extinction & 45 & \textbf{9} & \textbf{5} \\ \hline
-        Extinction & 3 & 0 & 0 \\ \hline
-    \end{tabular}
-    \begin{tabular}{| p{2.75cm} *{3}{|c} |}
-        \hline
-        Narrow & Avg Idom & Meiosis Idom & Meiosis Cdom \\ \hline
-        Speciation & 0 & 0 & \textbf{12} \\ \hline
-        Partial Extinction & 46 & 48 & \textbf{33} \\ \hline
-        Extinction & 2 & 0 & 3 \\ \hline
-    \end{tabular}
-    \caption{
-        BSRM Scenario with Varying Initial Populations \newline
-        \textit{Bold is statistically significant at 1\%. Italics are statistically significant at 5\%.} 
-    }
-    \label{table:EXP5}
-\end{table}
 
 When the initial population was widened, incomplete dominance performed almost identically to complete dominance, with thirty-nine speciation events to forty-three. However, when the initial population was narrowed and confined to a single niche, there were no speciation events for incomplete dominance and twelve for complete dominance (the averaging method did not produce any speciation events in either condition). These results suggest that both incomplete dominance and complete dominance are equally effective in protecting genetic diversity in a population: complete dominance only performed better in our initial experiment because it added a method to bridge the low-fitness valley.
 
@@ -232,55 +221,47 @@ Finally, from a biological standpoint, it still remains to be seen how sexual se
 
 In summary, the findings of this paper are fourfold. One, we successfully replicated the results of the \textit{Speciation} paper and confirmed their findings. Two, we demonstrated that meiotic inheritance radically changes the behavior of the simulation, thus providing evidence against the \textit{Speciation} paper's biological conclusions. Three, we demonstrated that meiotic inheritance allows for speciation in multi-niche environments, which may have applications in genetic algorithms. And four, we demonstrated that complete dominance gives populations the opportunity to explore the low-fitness valley, even when the mutation rate is smaller than the expanse. 
 
-\newpage
-
 \section{Appendix}
 
 \subsection{Results}
 
 The results from the experimental replication and our first control study are given in figure \ref{fig:EXP2} and table \ref{table:EXP2}. In figure \ref{fig:EXP2}, the first column represents the extinction rates given in the \textit{Speciation} paper and the second column represents our replicated results. The third and fourth columns represent the introduction of the new genetic structure, without meiotic inheritance. As expected, the results from our replication and control experiment closely match those from the initial paper. Specifically, we see high rates of speciation in the BSAM and USAM scenarios, and no speciation in the BSRM and USRM scenarios.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=\linewidth]{Data/EXP2}
-    \caption{Introduction of Gene Structure}
-    \label{fig:EXP2}
-\end{figure}
-
 \begin{table}
 \centering
-    \begin{tabular}{| p{2.75cm} *{4}{|c} |}
+    \caption{
+        Experimental Replication and Introducing Gene Structure: Bold is statistically significant at 1\%. Italics are statistically significant at 5\%.}
+    \begin{tabular}{| p{2.00cm} *{4}{|c} |}
         \hline
+        \rowcolor{Grey}
         BSAM & Baseline & Replication & Avg Idom & Avg Cdom \\ \hline
         Speciation & 31 & 30 & 25 & 23 \\ \hline
         Partial Extinction & 17 & 15 & \textit{23} & 21 \\ \hline
         Extinction & 0 & \textit{3} & \textit{0} & 4 \\ \hline
-    \end{tabular}
-    \begin{tabular}{| p{2.75cm} *{4}{|c} |}
-        \hline
+        \rowcolor{Grey}
         BSRM & Baseline & Replication & Avg Idom & Avg Cdom \\ \hline
         Speciation & 0 & 0 & 0 & 0 \\ \hline
         Partial Extinction & 41 & 38 & 35 & 35 \\ \hline
         Extinction & 7 & 10 & 13 & 13 \\ \hline
-    \end{tabular}
-    \begin{tabular}{| p{2.75cm} *{4}{|c} |}
-        \hline
+        \rowcolor{Grey}
         USAM & Baseline & Replication & Avg Idom & Avg Cdom \\ \hline
         Branching & 35 & 37 & 41 & 41 \\ \hline
         Extinction & 13 & 11 & 7 & 7 \\ \hline
-    \end{tabular}
-    \begin{tabular}{| p{2.75cm} *{4}{|c} |}
-        \hline
+        \rowcolor{Grey}
         USRM & Baseline & Replication & Avg Idom & Avg Cdom \\ \hline
         Single Species & 35 & \textbf{23} & 24 & \textbf{34}\\ \hline
         Extinction & 13 & \textbf{25} & 24 & \textbf{14} \\ \hline
     \end{tabular}
-    \caption{
-        Experimental Replication and Introducing Gene Structure \newline 
-        \textit{Bold is statistically significant at 1\%. Italics are statistically significant at 5\%.}
-    }
     \label{table:EXP2}
 \end{table}
+
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=\linewidth]{Data/EXP2}
+    \caption{Introduction of Gene Structure}
+    \label{fig:EXP2}
+\end{figure*}
 
 \subsection{Analysis}
 
@@ -288,7 +269,62 @@ In the BSAM, BSRM, and USAM cases, the population distributions, the widths of t
 
 In the control study, we introduced the new genetic structure but kept the averaging method the same, then compared the results against our findings from the first experiment. As expected, the population trees and extinction rates closely matched our original results. Again, the only major variation was in the extinction rates for the complete dominance structure in the USRM scenario. We suspect that this variation may have been the result of the slight skewing of the phenotypes of the initial population, caused by the switch from incomplete dominance to complete dominance. Nevertheless, this experiment demonstrates that the new genetic structure had little impact on the behavior of the populations.
 
-\newpage
-\bibliographystyle{plain}
-\bibliography{citations}
+\bibliography{IEEEabrv}
+\begin{thebibliography}{1}
+
+\bibitem{BMP4}
+Arhat Abzhanov.
+\newblock Bmp4 and morphological variation of beaks in darwin's finches.
+\newblock {\em Science}, 2004.
+
+\bibitem{TEXTBOOK}
+Niel~A. Campbell, Brad Williamson, and Robin~J. Heyden.
+\newblock {\em Biology Exploring Life}.
+\newblock Pearson, 2006.
+
+\bibitem{SPBOOK}
+Jerry~A. Coyne and H.~Allen Orr.
+\newblock {\em Speciation}.
+\newblock Sinauer Associates, 2004.
+
+\bibitem{NICHING}
+Jeffrey Horn, Nicholas Nafpliotis, and David~E Goldberg.
+\newblock A niched pareto genetic algorithm for multiobjective optimization.
+\newblock {\em IEEE}, 1994.
+
+\bibitem{CHICKEN}
+Harris A. Lewin Ronald L. Westemeier Jeffrey D. Brawn Ken N.~Paige Juan
+  L.~Bouzat, Hans H.~Cheng.
+\newblock Genetic evaluation of a demographic bottleneck in the greater prairie
+  chicken.
+\newblock {\em Conservation Biology}, 1998.
+
+\bibitem{TOPOLOGIES}
+Jayshree~A Sarma.
+\newblock An analysis of decentralized and spatially distributed genetic
+  algorithms.
+\newblock {\em Bombay University}, 1998.
+
+\bibitem{TAGGING}
+William~M. Spears.
+\newblock Simple subpopulation schemes.
+\newblock {\em World Scientific}, 1994.
+
+\bibitem{ISLAND}
+Darrell Whitley, Soraya Rana, and Robert~B Heckendorn.
+\newblock The island model genetic algorithm: On separability population size
+  and convergence.
+\newblock {\em Colorado State University}, 1998.
+
+\end{thebibliography}
+
+
+
+
+
+
+
+% that's all folks
 \end{document}
+
+
