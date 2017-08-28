@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: plain.bst
+Database file #1: citations.bib
+Too many commas in name 1 of "Juan L. Bouzat, Hans H. Cheng, Harris A. Lewin, Ronald L. Westemeier, Jeffrey D. Brawn, Ken N. Paige" for entry CHICKEN
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Juan L. Bouzat, Hans H. Cheng, Harris A. Lewin, Ronald L. Westemeier, Jeffrey D. Brawn, Ken N. Paige" for entry CHICKEN
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Juan L. Bouzat, Hans H. Cheng, Harris A. Lewin, Ronald L. Westemeier, Jeffrey D. Brawn, Ken N. Paige" for entry CHICKEN
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Juan L. Bouzat, Hans H. Cheng, Harris A. Lewin, Ronald L. Westemeier, Jeffrey D. Brawn, Ken N. Paige" for entry CHICKEN
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Juan L. Bouzat, Hans H. Cheng, Harris A. Lewin, Ronald L. Westemeier, Jeffrey D. Brawn, Ken N. Paige" for entry CHICKEN
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Juan L. Bouzat, Hans H. Cheng, Harris A. Lewin, Ronald L. Westemeier, Jeffrey D. Brawn, Ken N. Paige" for entry CHICKEN
+while executing---line 1090 of file plain.bst
+You've used 8 entries,
+            2118 wiz_defined-function locations,
+            541 strings with 4995 characters,
+and the built_in function-call counts, 1917 in all, are:
+= -- 176
+> -- 95
+< -- 0
++ -- 41
+- -- 30
+* -- 97
+:= -- 361
+add.period$ -- 24
+call.type$ -- 8
+change.case$ -- 37
+chr.to.int$ -- 0
+cite$ -- 8
+duplicate$ -- 84
+empty$ -- 147
+format.name$ -- 30
+if$ -- 382
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 10
+newline$ -- 43
+num.names$ -- 16
+pop$ -- 47
+preamble$ -- 1
+purify$ -- 31
+quote$ -- 0
+skip$ -- 55
+stack$ -- 0
+substring$ -- 43
+swap$ -- 8
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 0
+while$ -- 16
+width$ -- 9
+write$ -- 82
+(There were 6 error messages)

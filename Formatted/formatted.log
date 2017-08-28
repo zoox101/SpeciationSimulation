@@ -1,32 +1,122 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.19)  28 AUG 2017 16:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.19)  28 AUG 2017 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**formatted.tex
+(./formatted.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 22 language(s) loaded.
-(/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(./IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
-)
-(/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/inputenc.sty
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen105
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\IEEEPARstartletwidth=\dimen125
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+) (/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
@@ -339,17 +429,17 @@ Now handling font encoding U ...
 ))
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip43
-\bibsep=\skip44
+\bibhang=\skip44
+\bibsep=\skip45
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count87
+\c@NAT@ctr=\count94
 )
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks17
 )
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
@@ -371,10 +461,10 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2016basic/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count88
+\Gread@gobject=\count95
 ))
-\Gin@req@height=\dimen103
-\Gin@req@width=\dimen104
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
 )
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
@@ -385,20 +475,37 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen105
-\captionmargin@=\dimen106
-\captionwidth=\dimen107
-\caption@tempdima=\dimen108
-\caption@indent=\dimen109
-\caption@parindent=\dimen110
-\caption@hangindent=\dimen111
+\captionmargin=\dimen128
+\captionmargin@=\dimen129
+\captionwidth=\dimen130
+\caption@tempdima=\dimen131
+\caption@indent=\dimen132
+\caption@parindent=\dimen133
+\caption@hangindent=\dimen134
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
 )
-\c@ContinuedFloat=\count89
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi .
+\c@ContinuedFloat=\count96
 )
-\c@subfigure=\count90
-\c@subtable=\count91
-)
-(/usr/local/texlive/2016basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+\c@subfigure=\count97
+\c@subtable=\count98
+) (/usr/local/texlive/2016basic/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -415,34 +522,36 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-No file main.aux.
-\openout1 = `main.aux'.
+(./formatted.aux)
+\openout1 = `formatted.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+
+-- Lines per column: 56 (exact).
 (/usr/local/texlive/2016basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count92
-\scratchdimen=\dimen112
-\scratchbox=\box26
-\nofMPsegments=\count93
-\nofMParguments=\count94
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count95
-\MPscratchDim=\dimen113
-\MPnumerator=\count96
-\makeMPintoPDFobject=\count97
-\everyMPtoPDFconversion=\toks18
+\scratchcounter=\count99
+\scratchdimen=\dimen135
+\scratchbox=\box28
+\nofMPsegments=\count100
+\nofMParguments=\count101
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count102
+\MPscratchDim=\dimen136
+\MPnumerator=\count103
+\makeMPintoPDFobject=\count104
+\everyMPtoPDFconversion=\toks19
 ) (/usr/local/texlive/2016basic/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -491,195 +600,173 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 18.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 18.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 18.
  <Data/FrontPage.jpeg, id=1, 566.115pt x 444.66125pt>
 File: Data/FrontPage.jpeg Graphic file (type jpg)
 
 <use Data/FrontPage.jpeg>
-Package pdftex.def Info: Data/FrontPage.jpeg used on input line 32.
-(pdftex.def)             Requested size: 345.0pt x 270.99191pt.
+Package pdftex.def Info: Data/FrontPage.jpeg used on input line 33.
+(pdftex.def)             Requested size: 252.0pt x 197.9313pt.
 
 
-Package natbib Warning: Citation `SPBOOK' on page 1 undefined on input line 37.
+Package natbib Warning: Citation `SPBOOK' on page 1 undefined on input line 38.
 
 
 
-Package natbib Warning: Citation `NICHING' on page 1 undefined on input line 39
+Package natbib Warning: Citation `NICHING' on page 1 undefined on input line 40
 .
 
 
 Package natbib Warning: Citation `TOPOLOGIES' on page 1 undefined on input line
- 39.
+ 40.
 
 
-Package natbib Warning: Citation `ISLAND' on page 1 undefined on input line 39.
+Package natbib Warning: Citation `ISLAND' on page 1 undefined on input line 40.
 
 
-[1
 
-{/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package natbib Warning: Citation `CHICKEN' on page 2 undefined on input line 43
+Package natbib Warning: Citation `CHICKEN' on page 1 undefined on input line 44
 .
 
-[2 <./Data/FrontPage.jpeg>] [3]
+[1{/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <./Data/FrontPage.jpeg>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 67.
+(Font)              <7> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 67.
- [4]
-
-Package natbib Warning: Citation `BMP4' on page 5 undefined on input line 87.
-
-
-LaTeX Warning: Reference `fig:EXP3' on page 5 undefined on input line 93.
+(Font)              <5> on input line 68.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 68.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 68.
 
 
-LaTeX Warning: Reference `table:EXP3' on page 5 undefined on input line 93.
+Package natbib Warning: Citation `BMP4' on page 2 undefined on input line 88.
 
 
-LaTeX Warning: Reference `fig:EXP3' on page 5 undefined on input line 93.
+Underfull \vbox (badness 1163) has occurred while \output is active []
 
-<Data/EXP3.jpeg, id=26, 1003.75pt x 1003.75pt>
+ [2]
+<Data/EXP3.jpeg, id=13, 1003.75pt x 1003.75pt>
 File: Data/EXP3.jpeg Graphic file (type jpg)
  <use Data/EXP3.jpeg>
-Package pdftex.def Info: Data/EXP3.jpeg used on input line 97.
-(pdftex.def)             Requested size: 345.0pt x 345.00758pt.
- [5]
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 104--133
+Package pdftex.def Info: Data/EXP3.jpeg used on input line 98.
+(pdftex.def)             Requested size: 252.0pt x 251.99368pt.
+
+Overfull \hbox (47.37987pt too wide) in paragraph at lines 105--134
  [][] 
  []
 
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 104--133
+Overfull \hbox (47.37987pt too wide) in paragraph at lines 105--134
  [] 
  []
 
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 104--133
+Overfull \hbox (47.37987pt too wide) in paragraph at lines 105--134
  [] 
  []
 
 
-Overfull \hbox (3.46773pt too wide) in paragraph at lines 104--133
+Overfull \hbox (47.37987pt too wide) in paragraph at lines 105--134
  [] 
  []
 
-[6 <./Data/EXP3.jpeg>] [7]
-
-LaTeX Warning: Reference `fig:EXP4' on page 8 undefined on input line 161.
-
-<Data/EXP4.jpeg, id=42, 1003.75pt x 501.875pt>
+[3 <./Data/EXP3.jpeg>] <Data/EXP4.jpeg, id=24, 1003.75pt x 501.875pt>
 File: Data/EXP4.jpeg Graphic file (type jpg)
- <use Data/EXP4.jpeg>
-Package pdftex.def Info: Data/EXP4.jpeg used on input line 165.
-(pdftex.def)             Requested size: 345.0pt x 172.50378pt.
- [8]
-[9 <./Data/EXP4.jpeg>]
 
-LaTeX Warning: Reference `fig:EXP5' on page 10 undefined on input line 180.
-
-
-LaTeX Warning: Reference `table:EXP5' on page 10 undefined on input line 180.
-
-
-LaTeX Warning: Reference `fig:EXP5' on page 10 undefined on input line 180.
-
-<Data/EXP5.jpeg, id=49, 1003.75pt x 669.50125pt>
+<use Data/EXP4.jpeg>
+Package pdftex.def Info: Data/EXP4.jpeg used on input line 166.
+(pdftex.def)             Requested size: 252.0pt x 125.99684pt.
+ [4 <./Data/EXP4.jpeg>]
+<Data/EXP5.jpeg, id=28, 1003.75pt x 669.50125pt>
 File: Data/EXP5.jpeg Graphic file (type jpg)
  <use Data/EXP5.jpeg>
-Package pdftex.def Info: Data/EXP5.jpeg used on input line 184.
-(pdftex.def)             Requested size: 345.0pt x 230.12006pt.
- [10 <./Data/EXP5.jpeg>] [11]
-
-Package natbib Warning: Citation `TAGGING' on page 12 undefined on input line 2
-24.
+Package pdftex.def Info: Data/EXP5.jpeg used on input line 185.
+(pdftex.def)             Requested size: 252.0pt x 168.07979pt.
 
 
-Package natbib Warning: Citation `TEXTBOOK' on page 12 undefined on input line 
-230.
+Package natbib Warning: Citation `TAGGING' on page 5 undefined on input line 22
+5.
 
-[12] [13]
+[5 <./Data/EXP5.jpeg>]
 
-LaTeX Warning: Reference `fig:EXP2' on page 14 undefined on input line 240.
+Package natbib Warning: Citation `TEXTBOOK' on page 6 undefined on input line 2
+31.
 
-
-LaTeX Warning: Reference `table:EXP2' on page 14 undefined on input line 240.
-
-
-LaTeX Warning: Reference `fig:EXP2' on page 14 undefined on input line 240.
-
-<Data/EXP2.jpeg, id=64, 1003.75pt x 1003.75pt>
+[6] <Data/EXP2.jpeg, id=37, 1003.75pt x 1003.75pt>
 File: Data/EXP2.jpeg Graphic file (type jpg)
  <use Data/EXP2.jpeg>
-Package pdftex.def Info: Data/EXP2.jpeg used on input line 244.
-(pdftex.def)             Requested size: 345.0pt x 345.00758pt.
- [14 <./Data/EXP2.jpeg>] [15] (./main.bbl)
+Package pdftex.def Info: Data/EXP2.jpeg used on input line 245.
+(pdftex.def)             Requested size: 252.0pt x 251.99368pt.
 
-Package natbib Warning: There were undefined citations.
-
-[16] (./main.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
+Overfull \hbox (19.09995pt too wide) in paragraph at lines 252--281
+ [][] 
+ []
 
 
-! Package natbib Error: Bibliography not compatible with author-year citations.
+Overfull \hbox (19.09995pt too wide) in paragraph at lines 252--281
+ [] 
+ []
 
-(natbib)                Press <return> to continue in numerical citation style.
+
+Overfull \hbox (19.09995pt too wide) in paragraph at lines 252--281
+ [] 
+ []
 
 
-See the natbib package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.54 ...mand\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-Check the bibliography entries for non-compliant syntax,
-or select author-year BibTeX style, e.g. plainnat
+Overfull \hbox (19.09995pt too wide) in paragraph at lines 252--281
+ [] 
+ []
+
+[7 <./Data/EXP2.jpeg>] (./formatted.bbl
+
+Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 )
 
-LaTeX Warning: There were undefined references.
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package natbib Warning: There were undefined citations.
 
- ) 
+[8
+
+] (./formatted.aux) ) 
 Here is how much of TeX's memory you used:
- 3768 strings out of 494447
- 54548 string characters out of 6166766
- 124123 words of memory out of 5000000
- 7067 multiletter control sequences out of 15000+600000
- 8593 words of font info for 30 fonts, out of 8000000 for 9000
+ 4574 strings out of 494447
+ 70966 string characters out of 6166766
+ 152630 words of memory out of 5000000
+ 7863 multiletter control sequences out of 15000+600000
+ 38640 words of font info for 72 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 42i,10n,40p,1345b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
-0.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmex10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi6.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016basic/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2016basic/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016basic/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016basic/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016basic/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016basic/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016basic/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on main.pdf (16 pages, 1330838 bytes).
+ 42i,10n,40p,1350b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016basic/texmf-dist/fonts/enc/dvips/b
+ase/8r.enc}</usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmex10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi6.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr5.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016basic/texmf-dist/fo
+nts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/t
+ype1/urw/times/utmr8a.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on formatted.pdf (8 pages, 1260326 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
