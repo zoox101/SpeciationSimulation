@@ -15,17 +15,17 @@ df = c(
   "cdom/meiosis/Output145.csv"
 )
 
-x = rbind(plot(read.table(df[1], header=TRUE, sep=","), LT, y="BSAM", x="Incomplete Dominance Structure"), 
+x = rbind(plot(read.table(df[1], header=TRUE, sep=","), LT, y="BSAM", x="Non-Meiotic - Incomplete Dominance"), 
           plot(read.table(df[2], header=TRUE, sep=","), LT, rmx, y="BSRM"),
           plot(read.table(df[3], header=TRUE, sep=","), LT, rmx, y="USAM"),
           plot(read.table(df[4], header=TRUE, sep=","), LB, y="USRM", x="Generation"))
 
-y = rbind(plot(read.table(df[5], header=TRUE, sep=","), LT, rmy, x="Meiosis - Incomplete Dominance"), 
+y = rbind(plot(read.table(df[5], header=TRUE, sep=","), LT, rmy, x="Meiotic - Incomplete Dominance"), 
           plot(read.table(df[6], header=TRUE, sep=","), LT, rma),
           plot(read.table(df[7], header=TRUE, sep=","), LT, rma),
           plot(read.table(df[8], header=TRUE, sep=","), LB, rmy, x="Generation"))
 
-z = rbind(plot(read.table(df[9], header=TRUE, sep=","), RT, x="Meiosis - Complete Dominance", y="Beak Size"), 
+z = rbind(plot(read.table(df[9], header=TRUE, sep=","), RT, x="Meiotic - Complete Dominance", y="Beak Size"), 
           plot(read.table(df[10], header=TRUE, sep=","), RT, rmx, y="Beak Size"),
           plot(read.table(df[11], header=TRUE, sep=","), RT, rmx, y="Beak Size"),
           plot(read.table(df[12], header=TRUE, sep=","), RB, x="Generation", y="Beak Size"))
