@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.19)  28 AUG 2017 18:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.19)  1 NOV 2017 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -351,13 +351,13 @@ Before submitting the final camera ready copy, remember to:
 
 [8] [9 <./Data/EXP2.jpeg>] (./IEEE_Formatted.aux) ) 
 Here is how much of TeX's memory you used:
- 2535 strings out of 494447
- 41550 string characters out of 6166766
- 112935 words of memory out of 5000000
- 5841 multiletter control sequences out of 15000+600000
+ 2536 strings out of 494447
+ 41559 string characters out of 6166766
+ 115938 words of memory out of 5000000
+ 5842 multiletter control sequences out of 15000+600000
  41460 words of font info for 75 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 38i,11n,23p,1355b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,23p,1349b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016basi
 c/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016basic/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016basic/texm
@@ -373,7 +373,7 @@ exlive/2016basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texliv
 e/2016basic/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/20
 16basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016bas
 ic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on IEEE_Formatted.pdf (9 pages, 1274796 bytes).
+Output written on IEEE_Formatted.pdf (9 pages, 1274423 bytes).
 PDF statistics:
  92 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream

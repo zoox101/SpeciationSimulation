@@ -37,7 +37,7 @@ public class AAADriver {
 		/* Simulation Testing */
 		
 		/* Mutation Testing */
-		new Simulation(sexual, bimodal, meiosis, incomplete);
+		//new Simulation(sexual, bimodal, meiosis, incomplete);
 		//new Simulation(sexual, uniform, pseudo, incomplete);
 		//new Simulation(sexual, bimodal, avg, incomplete);
 		//new Simulation(sexual, uniform, avg, incomplete);
