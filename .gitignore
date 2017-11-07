@@ -1,1 +1,7 @@
 
+
+*.csv
+
+NewGraph/data/.Rhistory
+
+NewGraph/.Rhistory
