@@ -1,5 +1,5 @@
 
-data = read.table(file.choose(), header=TRUE, sep=",")
+data = read.table("avg/Output145.csv", header=TRUE, sep=",")
 
 max = c(); min = c()
 for(i in 1:nrow(data)) {
