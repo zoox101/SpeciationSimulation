@@ -1,7 +1,0 @@
-Changes
-	Mutation rate quadrupled - 0.980
-	Population decreased - 40
-Sets
-	Pseudo/Idom
-	Meiosis/Idom
-	Meiosis/Cdom

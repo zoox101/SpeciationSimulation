@@ -1,8 +1,0 @@
-Changes
-	Mutation rate halved - 1225
-	Population mean moved - 0.080
-	Population reduced - 40
-Sets
-	Pseudo/Idom
-	Meiosis/Idom
-	Meiosis/Cdom

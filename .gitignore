@@ -1,7 +1,23 @@
 
+.metadata/*
+.recommenders/*
+.project
 
-*.csv
+*.class
+*.eps
 
+*.log
+*.blg
+*.aux
+
+GeneticsArena/saves/*
+
+.Rhistory
 NewGraph/data/.Rhistory
-
 NewGraph/.Rhistory
+
+data-zipped/*
+ZZZSource/*
+
+
+

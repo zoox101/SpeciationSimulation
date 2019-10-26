@@ -1,0 +1,25 @@
+#Will Booker
+
+data1 = read.table("data/nomutation/Output1.csv", header=TRUE, sep=",")
+plot1 = ggplot(NULL, aes(x=Generation, y=BeakSize))
+plot1 = plot1 + theme(legend.position="none") + theme_bw()
+plot1 = plot1 + scale_y_continuous(breaks = 2*(0:5), limits = c(0,11))
+plot1 = plot1 + scale_x_continuous(limits = c(0, 120))
+plot1 = plot1 + geom_point(data=data1, color="DarkBlue", size=0.01) 
+plot1 = plot1 + ggtitle("Non-Meiotic - Incomplete Dominance")
+plot1 = plot1 + theme(plot.title=element_text(hjust=0.5))
+p1 = ggplotGrob(plot1)
+
+data2 = read.table("data/nomutation/Output53.csv", header=TRUE, sep=",")
+plot2 = ggplot(NULL, aes(x=Generation, y=BeakSize))
+plot2 = plot2 + theme(legend.position="none") + theme_bw()
+plot2 = plot2 + scale_y_continuous(breaks = 2*(0:5), limits = c(0,11), position="right")
+plot2 = plot2 + scale_x_continuous(limits = c(0, 120))
+plot2 = plot2 + geom_point(data=data2, color="DarkBlue", size=0.01) 
+plot2 = plot2 + ggtitle("Meiotic - Incomplete Dominance") 
+plot2 = plot2 + theme(plot.title=element_text(hjust=0.5))
+plot2 = plot2 + theme(axis.title.y=element_blank())
+p2 = ggplotGrob(plot2)
+
+full = cbind(p1, p2)
+grid.newpage(); grid.draw(rbind(full, size = "last"))
